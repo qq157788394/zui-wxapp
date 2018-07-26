@@ -4,27 +4,30 @@ const rename = require('gulp-rename')
 const runSequence = require('run-sequence')
 const $ = require('gulp-load-plugins')()
 
+
 // 清空dist目录
 gulp.task('clean', () => {
   return del(['./dist/**'])
 })
 
+// 编译less
 gulp.task('compile-css', () => {
   return gulp.src(['../src/**/*.less', '!../src/**/_*.less'])
     .pipe($.plumber())
     .pipe($.less())
     .pipe($.autoprefixer(['iOS >= 8', 'Android > 4.1']))
-    // .pipe($.cssnano({
-    //   zindex: false,
-    //   minifySelectors: false,
-    //   autoprefixer: false
-    // }))
+    .pipe($.cssnano({
+      zindex: false,
+      minifySelectors: false,
+      autoprefixer: false
+    }))
     .pipe(rename((path) => {
       path.extname = '.wxss';
     }))
     .pipe(gulp.dest('../examples/dist/'))
 })
 
+// 编译js
 gulp.task('compile-js', () => {
     return gulp.src(['../src/**/*.js'])
       .pipe($.plumber())
@@ -36,6 +39,7 @@ gulp.task('compile-js', () => {
       .pipe(gulp.dest('../examples/dist/'))
 });
 
+// 编译json
 gulp.task('compile-json', () => {
   return gulp.src(['../src/**/*.json'])
     .pipe($.plumber())
@@ -44,12 +48,14 @@ gulp.task('compile-json', () => {
     .pipe(gulp.dest('../examples/dist/'))
 });
 
+// 编译wxml
 gulp.task('compile-wxml', () => {
   return gulp.src(['../src/**/*.wxml'])
     .pipe($.plumber())
     .pipe(gulp.dest('../examples/dist/'))
 })
 
+// 运行
 gulp.task('default', () => {
   runSequence(
     'clean',
