@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FAFAFA",
+    "navigationBarTitleText": "zui-wxapp",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f9f9f9"
+  },
+  "debug": true
+}

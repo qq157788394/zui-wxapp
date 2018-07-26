@@ -6,8 +6,9 @@ const $ = require('gulp-load-plugins')()
 
 
 // 清空dist目录
-gulp.task('clean', () => {
-  return del(['./dist/**'])
+gulp.task('clean', done => {
+  del.sync(['./dist/**'])
+  done()
 })
 
 // 编译less
