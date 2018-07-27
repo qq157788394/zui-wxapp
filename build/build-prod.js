@@ -7,7 +7,7 @@ const $ = require('gulp-load-plugins')()
 
 // 清空dist目录
 gulp.task('clean', done => {
-  del.sync(['./dist/**'])
+  del.sync(['../dist/'])
   done()
 })
 
@@ -25,7 +25,7 @@ gulp.task('compile-css', () => {
     .pipe(rename((path) => {
       path.extname = '.wxss';
     }))
-    .pipe(gulp.dest('../examples/dist/'))
+    .pipe(gulp.dest('../dist/'))
 })
 
 // 编译js
@@ -37,7 +37,7 @@ gulp.task('compile-js', () => {
       .pipe($.eslint.failAfterError())
       .pipe($.babel())
       // .pipe($.uglify())
-      .pipe(gulp.dest('../examples/dist/'))
+      .pipe(gulp.dest('../dist/'))
 });
 
 // 编译json
@@ -46,20 +46,20 @@ gulp.task('compile-json', () => {
     .pipe($.plumber())
     .pipe($.eslint())
     .pipe($.eslint.format('../node_modules/eslint-friendly-formatter'))
-    .pipe(gulp.dest('../examples/dist/'))
+    .pipe(gulp.dest('../dist/'))
 });
 
 // 编译wxml
 gulp.task('compile-wxml', () => {
   return gulp.src(['../src/**/*.wxml'])
     .pipe($.plumber())
-    .pipe(gulp.dest('../examples/dist/'))
+    .pipe(gulp.dest('../dist/'))
 })
 
 // 运行
 gulp.task('default', () => {
   runSequence(
-    'clean',
+    // 'clean',
     ['compile-css', 'compile-js', 'compile-json', 'compile-wxml']
   )
 })

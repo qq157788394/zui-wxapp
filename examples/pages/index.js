@@ -1,10 +1,17 @@
 Page({
   data: {},
   onLoad () {
-    this.getAppData()
   },
-  getAppData () {
-    const t = this.$app.globalData
-    console.log(t)
+  bindTap (e) {
+    console.log('bind', e)
+  },
+  catchTap (e) {
+    console.log('catch', e)
+  },
+  longTap (e) {
+    console.log('long', e)
+  },
+  bindgetuserinfo (e) {
+    console.log(e)
   }
 })

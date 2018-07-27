@@ -15,7 +15,7 @@ module.exports = {
     extends: 'standard',
     // required to lint *.vue files
     plugins: [
-      'html'
+      'html', 'json'
     ],
     // add your custom rules here
     'rules': {
@@ -29,6 +29,7 @@ module.exports = {
     globals: {
       App: true,
       Page: true,
+      Component: true,
       wx: true,
       getApp: true,
       getPage: true,

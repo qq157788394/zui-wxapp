@@ -1,0 +1,112 @@
+@import "../../assets/_variable";
+
+// 高度
+@zui-button-height--x-large: 56px;
+@zui-button-height--large: 48px;
+@zui-button-height--medium: 36px;
+@zui-button-height--small: 28px;
+@zui-button-height--mini: 22px;
+
+// 宽度
+@zui-button-width-min: 64px;
+
+// padding
+@zui-button-padding: 0 16px;
+@zui-button-padding--small: 0 12px;
+@zui-button-padding--mini: 0 8px;
+
+// font-size
+@zui-button-font-size--x-large: 18px;
+@zui-button-font-size--large: 15px;
+@zui-button-font-size--medium: 15px;
+@zui-button-font-size--small: 13px;
+@zui-button-font-size--mini: 11px;
+
+// letter-spacing
+@zui-button-letter-spacing: 0.5px;
+@zui-button-letter-spacing--small: 0;
+
+// font-weight
+@zui-button-font-weight: @--font-weight-blod;
+@zui-button-font-weight--regular: @--font-weight-base;
+
+// shadow
+@zui-button-shadow: @--box-shadow-base;
+@zui-button-shadow--active: @--box-shadow-dark;
+@zui-button-shadow--none: none;
+
+// backgound-color
+@zui-button-background-color--default: @--fill-base;
+@zui-button-background-color--primary: @--color-primary;
+@zui-button-background-color--success: @--color-success;
+@zui-button-background-color--warning: @--color-warning;
+@zui-button-background-color--danger: @--color-danger;
+@zui-button-background-color--info: @--color-info;
+
+// color
+@zui-button-color--dark: @--color-text-regular;
+@zui-button-color--light: @--fill-base;
+
+// border-radius
+@zui-button-border-radius--base: 2px;
+@zui-button-border-radius--none: 0;
+@zui-button-border-radius--circle: 50%;
+@zui-button-border-radius--pill: 24px;
+
+:host {
+  box-sizing: border-box;
+}
+
+.zui-button {
+  position: relative;
+  -webkit-appearance: none;
+  flex: none;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  user-select: none;
+  font-size: @zui-button-font-size--medium;
+  border-radius: @zui-button-border-radius--base;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: @zui-button-height--medium;
+  line-height: @zui-button-height--medium;
+  letter-spacing: @zui-button-letter-spacing;
+  font-size: @zui-button-font-size--medium;
+  font-weight: @zui-button-font-weight;
+  padding: @zui-button-padding;
+  box-sizing: border-box;
+  color: @zui-button-color--dark;
+  background-color: @zui-button-background-color--default;
+  box-shadow: @zui-button-shadow;
+
+  &::after {
+    .setActive();
+    border: none;
+    transform: unset;
+    transform-origin: unset;
+    box-sizing: inherit;
+    border-radius: unset;
+    overflow: hidden;
+  }
+
+  &.active {
+    box-shadow: @zui-button-shadow--active;
+
+    &::after {
+      opacity: .08;
+    }
+  }
+}
+
+.zui-button--x-large {
+  height: @zui-button-height--large;
+  line-height: @zui-button-height--large;
+  font-size: @zui-button-font-size--large;
+  padding: @zui-button-padding;
+}

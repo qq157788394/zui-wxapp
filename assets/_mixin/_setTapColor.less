@@ -1,0 +1,15 @@
+.setTapColor (@c: transparent) {
+  -webkit-tap-highlight-color: @c;
+}
+
+.setActive (@c: #bdbdbd) {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: @c;
+  opacity: 0;
+}
