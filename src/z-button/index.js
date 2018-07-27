@@ -1,10 +1,5 @@
 Component({
   properties: {
-    size: String,
-    type: String,
-    plain: Boolean,
-    disabled: Boolean,
-    loading: Boolean,
     formType: String,
     openType: String,
     hoverClass: {
@@ -23,7 +18,21 @@ Component({
     sendMessagePath: String,
     sendMessageImg: String,
     showMessageCard: Boolean,
-    appParameter: Boolean
+    appParameter: Boolean,
+    mode: {
+      type: String,
+      value: 'raised'
+    },
+    type: String,
+    size: String,
+    plain: Boolean,
+    disabled: Boolean,
+    loading: Boolean,
+    borderRadius: {
+      type: String,
+      value: 'base'
+    },
+    boxShadow: String
   },
   data: {},
   methods: {

@@ -1,1 +1,205 @@
-.zui-button,:host{box-sizing:border-box}.zui-button{position:relative;-webkit-appearance:none;-webkit-box-flex:0;-webkit-flex:none;flex:none;text-align:center;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;white-space:nowrap;-webkit-user-select:none;user-select:none;border-radius:2px;border:none;outline:none;text-decoration:none;text-transform:uppercase;height:36px;line-height:36px;letter-spacing:.5px;font-size:15px;font-weight:700;padding:0 16px;color:#5a5e66;background-color:#fff;box-shadow:0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04)}.zui-button::after{pointer-events:none;content:"";position:absolute;top:0;right:0;bottom:0;left:0;background-color:#bdbdbd;opacity:0;border:none;-webkit-transform:unset;transform:unset;-webkit-transform-origin:unset;transform-origin:unset;box-sizing:inherit;border-radius:unset;overflow:hidden}.zui-button.active{box-shadow:0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.12)}.zui-button.active::after{opacity:.08}.zui-button--x-large{height:48px;line-height:48px;font-size:15px;padding:0 16px}
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+:host {
+  box-sizing: border-box;
+}
+.zui-button {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-content: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-appearance: none;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+          flex: none;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+          user-select: none;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 36px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 16px;
+  box-sizing: border-box;
+  color: #5a5e66;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+.zui-button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #bdbdbd;
+  opacity: 0;
+  border: none;
+  -webkit-transform: unset;
+          transform: unset;
+  -webkit-transform-origin: unset;
+          transform-origin: unset;
+  box-sizing: inherit;
+  border-radius: unset;
+  overflow: hidden;
+}
+.zui-button.active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+}
+.zui-button.active::after {
+  opacity: .08;
+}
+.zui-button.zui-button--x-large {
+  height: 56px;
+  line-height: 56px;
+  font-size: 18px;
+  padding: 0 16px;
+}
+.zui-button.zui-button--large {
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  padding: 0 16px;
+}
+.zui-button.zui-button--medium {
+  height: 36px;
+  line-height: 36px;
+  font-size: 15px;
+  padding: 0 16px;
+}
+.zui-button.zui-button--small {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+  padding: 0 12px;
+  min-width: 64px;
+}
+.zui-button.zui-button--mini {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  height: 22px;
+  line-height: 22px;
+  font-size: 11px;
+  padding: 0 8px;
+}
+.zui-button.zui-button--default {
+  background-color: #fff;
+  color: #5a5e66;
+}
+.zui-button.zui-button--primary {
+  background-color: #0EDA86;
+  color: #fff;
+}
+.zui-button.zui-button--success {
+  background-color: #67c23a;
+  color: #fff;
+}
+.zui-button.zui-button--warning {
+  background-color: #eb9e05;
+  color: #fff;
+}
+.zui-button.zui-button--danger {
+  background-color: #fa5555;
+  color: #fff;
+}
+.zui-button.zui-button--info {
+  background-color: #878d99;
+  color: #fff;
+}
+.zui-button.zui-button--raised {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+.zui-button.zui-button--flat,
+.zui-button.zui-button--plain {
+  box-shadow: none;
+  background-color: #fff;
+}
+.zui-button.zui-button--flat.zui-button--default,
+.zui-button.zui-button--plain.zui-button--default {
+  color: #5a5e66;
+}
+.zui-button.zui-button--flat.zui-button--primary,
+.zui-button.zui-button--plain.zui-button--primary {
+  color: #0EDA86;
+}
+.zui-button.zui-button--flat.zui-button--success,
+.zui-button.zui-button--plain.zui-button--success {
+  color: #67c23a;
+}
+.zui-button.zui-button--flat.zui-button--warning,
+.zui-button.zui-button--plain.zui-button--warning {
+  color: #eb9e05;
+}
+.zui-button.zui-button--flat.zui-button--danger,
+.zui-button.zui-button--plain.zui-button--danger {
+  color: #fa5555;
+}
+.zui-button.zui-button--flat.zui-button--info,
+.zui-button.zui-button--plain.zui-button--info {
+  color: #878d99;
+}
+.zui-button.zui-button--plain {
+  border: 1rpx solid currentColor;
+}
+.zui-button.zui-button-border-radius--circle {
+  border-radius: 50%;
+}
+.zui-button.zui-button-border-radius--pill {
+  border-radius: 24px;
+}
+.zui-button.zui-button-border-radius--base {
+  border-radius: 2px;
+}
+.zui-button.zui-button-border-radius--none {
+  border-radius: 0;
+}
+.zui-button.zui-button-shadow--none {
+  box-shadow: none !important;
+}

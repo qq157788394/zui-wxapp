@@ -1,3 +1,4 @@
 <view style="padding: 16px;">
-  <z-button >zui-button</z-button>
+  <z-button mode="plain" size="medium" type="success" border-radius="pill" loading>zui-button</z-button>
+  <z-button size="medium" type="success" border-radius="pill" box-shadow="none" loading>zui-button</z-button>
 </view>

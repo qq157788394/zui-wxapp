@@ -23,7 +23,16 @@ Component({
     sendMessagePath: String,
     sendMessageImg: String,
     showMessageCard: Boolean,
-    appParameter: Boolean
+    appParameter: Boolean,
+    mode: {
+      type: String,
+      value: 'raised'
+    },
+    borderRadius: {
+      type: String,
+      value: 'base'
+    },
+    boxShadow: String
   },
   data: {},
   methods: {

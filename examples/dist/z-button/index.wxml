@@ -1,5 +1,4 @@
 <button
-  class="zui-button"
   size="{{ size }}"
   type="{{ type }}"
   plain="{{ plain }}"
@@ -26,6 +25,7 @@
   bind:tap="bindTap"
   catch:tap="catchTap"
   longtap="longtap"
+  class="zui-button {{ 'zui-button--' + size }} {{ 'zui-button--' + mode }} {{ 'zui-button--' + type }} {{ 'zui-button-border-radius--' + borderRadius }} {{ 'zui-button-shadow--' + boxShadow }}"
 >
   <slot></slot>
 </button>
