@@ -1,14 +1,15 @@
 const gulp = require('gulp')
-const del = require('del')
+const del = require('gulp-clean')
 const rename = require('gulp-rename')
 const runSequence = require('run-sequence')
 const $ = require('gulp-load-plugins')()
 
 
 // 清空dist目录
-gulp.task('clean', done => {
-  del.sync(['../dist/'])
-  done()
+gulp.task('clean', () => {
+  return gulp.src(['../dist/'])
+    .pipe($.plumber())
+    .pipe(del())
 })
 
 // 编译less
@@ -23,7 +24,7 @@ gulp.task('compile-css', () => {
       autoprefixer: false
     }))
     .pipe(rename((path) => {
-      path.extname = '.wxss';
+      path.extname = '.wxss'
     }))
     .pipe(gulp.dest('../dist/'))
 })

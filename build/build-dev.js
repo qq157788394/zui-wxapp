@@ -1,14 +1,7 @@
 const gulp = require('gulp')
-const del = require('del')
 const rename = require('gulp-rename');
 const runSequence = require('run-sequence')
 const $ = require('gulp-load-plugins')()
-
-// 清空dist目录
-gulp.task('clean', done => {
-  del.sync(['./dist/**'])
-  done()
-})
 
 // 编译less
 gulp.task('compile-css', () => {
@@ -22,7 +15,7 @@ gulp.task('compile-css', () => {
     //   autoprefixer: false
     // }))
     .pipe(rename((path) => {
-      path.extname = '.wxss';
+      path.extname = '.wxss'
     }))
     .pipe(gulp.dest('../examples/dist/'))
 })
@@ -55,19 +48,31 @@ gulp.task('compile-wxml', () => {
       .pipe(gulp.dest('../examples/dist/'))
 })
 
+// examples less
+gulp.task('examples-css', () => {
+  return gulp.src(['../examples/**/*.less'])
+    .pipe($.plumber())
+    .pipe($.less())
+    .pipe($.autoprefixer(['iOS >= 8', 'Android > 4.1']))
+    .pipe(rename((path) => {
+      path.extname = '.wxss'
+    }))
+    .pipe(gulp.dest('../examples/'))
+})
+
 // watch
 gulp.task('auto', () => {
-    gulp.watch('../src/**/*.less', ['compile-css']);
-    gulp.watch('../src/**/*.js', ['compile-js']);
-    gulp.watch('../src/**/*.json', ['compile-json']);
-    gulp.watch('../src/**/*.wxml', ['compile-wxml']);
+    gulp.watch('../src/**/*.less', ['compile-css'])
+    gulp.watch('../examples/**/*.less', ['examples-css'])
+    gulp.watch('../src/**/*.js', ['compile-js'])
+    gulp.watch('../src/**/*.json', ['compile-json'])
+    gulp.watch('../src/**/*.wxml', ['compile-wxml'])
 })
 
 // 运行
 gulp.task('default', () => {
   runSequence(
-    'clean',
-    ['compile-css', 'compile-js', 'compile-json', 'compile-wxml'],
+    ['compile-css', 'examples-css', 'compile-js', 'compile-json', 'compile-wxml'],
     'auto'
   )
 })

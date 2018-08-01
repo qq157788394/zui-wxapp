@@ -1,0 +1,130 @@
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+.demo-block {
+  display: block;
+}
+.demo-inline {
+  display: inline-block;
+}
+.demo-page {
+  background-color: #f5f7fa;
+  overflow: hidden;
+}
+.demo-view {
+  position: relative;
+  background-color: #fff;
+}
+.demo-view::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d8dce5;
+  color: #d8dce5;
+  width: 200%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.demo-view::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 200%;
+  border-bottom: 1px solid #d8dce5;
+  color: #d8dce5;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.demo-title {
+  font-size: 18px;
+  color: #5a5e66;
+  line-height: 1.8;
+  margin-top: .5rem;
+}
+.demo-desc {
+  font-size: 14px;
+  color: #878d99;
+  margin: .5rem 0;
+}
+.demo-p-1 {
+  padding: 1rem;
+}
+.demo-pt-1 {
+  padding-top: 1rem;
+}
+.demo-pr-1 {
+  padding-right: 1rem;
+}
+.demo-pb-1 {
+  padding-bottom: 1rem;
+}
+.demo-pl-1 {
+  padding-left: 1rem;
+}
+.demo-px-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.demo-py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.demo-m-1 {
+  margin: 1rem;
+}
+.demo-mt-1 {
+  margin-top: 1rem;
+}
+.demo-mr-1 {
+  margin-right: 1rem;
+}
+.demo-mb-1 {
+  margin-bottom: 1rem;
+}
+.demo-ml-1 {
+  margin-left: 1rem;
+}
+.demo-mx-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.demo-my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

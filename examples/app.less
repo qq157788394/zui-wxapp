@@ -1,0 +1,100 @@
+@import "../assets/_variable";
+
+.demo-block {
+  display: block;
+}
+
+.demo-inline {
+  display: inline-block;
+}
+
+.demo-page {
+  background-color: @--background-color-base;
+  overflow: hidden;
+}
+
+.demo-view {
+  position: relative;
+  background-color: @--fill-base;
+
+  &::before {
+    .setTopLine();
+  }
+
+  &::after {
+    .setBottomLine();
+  }
+}
+
+.demo-title {
+  font-size: @--font-size-large;
+  color: @--color-text-regular;
+  line-height: 1.8;
+  margin-top: .5rem;
+}
+
+.demo-desc {
+  font-size: @--font-size-base;
+  color: @--color-text-secondary;
+  margin: .5rem 0;
+}
+
+.demo-p-1 {
+  padding: 1rem;
+}
+
+.demo-pt-1 {
+  padding-top: 1rem;
+}
+
+.demo-pr-1 {
+  padding-right: 1rem;
+}
+
+.demo-pb-1 {
+  padding-bottom: 1rem;
+}
+
+.demo-pl-1 {
+  padding-left: 1rem;
+}
+
+.demo-px-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.demo-py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.demo-m-1 {
+  margin: 1rem;
+}
+
+.demo-mt-1 {
+  margin-top: 1rem;
+}
+
+.demo-mr-1 {
+  margin-right: 1rem;
+}
+
+.demo-mb-1 {
+  margin-bottom: 1rem;
+}
+
+.demo-ml-1 {
+  margin-left: 1rem;
+}
+
+.demo-mx-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.demo-my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
