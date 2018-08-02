@@ -103,6 +103,6 @@ Component({
   moved () {},
   detached () {},
   relations: {},
-  externalClasses: {},
+  externalClasses: ['class-name'],
   options: {}
 })

@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "layout 栅格布局"
+  "navigationBarTitleText": "layout 栅格布局",
+  "usingComponents": {
+    "z-row": "../../dist/z-row/index",
+    "z-col": "../../dist/z-col/index"
+  }
 }

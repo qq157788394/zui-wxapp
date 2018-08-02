@@ -1,0 +1,6 @@
+<view
+  class="class-name zui-row {{ 'zui-row--align-' + align }} {{ 'zui-row--justify-' + justify }}"
+  style="{{ elementStyle }}"
+>
+  <slot></slot>
+</view>

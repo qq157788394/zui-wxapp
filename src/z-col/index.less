@@ -1,0 +1,29 @@
+// :host {
+//   box-sizing: border-box;
+// }
+
+.zui-col {
+  position: relative;
+  display: block;
+  width: 0;
+  box-sizing: border-box;
+  float: left;
+}
+
+.loopCol(@n) when(@n > 0) {
+  .zui-col--@{n} {
+    width: 100%/24*@n;
+  }
+  .loopCol((@n - 1))
+}
+
+.loopCol(24);
+
+.loopOffset(@n) when(@n > 0) {
+  .zui-col--offset-@{n} {
+    margin-left: 100%/24*@n;
+  }
+  .loopOffset((@n - 1))
+}
+
+.loopOffset(23);

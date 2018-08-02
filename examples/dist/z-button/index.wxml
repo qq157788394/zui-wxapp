@@ -25,7 +25,7 @@
   bind:tap="bindTap"
   catch:tap="catchTap"
   longtap="longtap"
-  class="zui-button {{ 'zui-button--' + size }} {{ 'zui-button--' + mode }} {{ 'zui-button--' + type }} {{ 'borderRadius' ? 'zui-button--border-radius--' + borderRadius : '' }} {{ boxShadow ? 'zui-button--shadow--' + boxShadow : '' }} {{ inline ? 'zui-button--inline' : '' }} {{ loading ? 'zui-button--loading' : '' }} {{ disabled ? 'zui-button--disabled' : '' }} {{ fab ? 'zui-button--fab' : '' }}"
+  class="class-name zui-button {{ 'zui-button--' + size }} {{ 'zui-button--' + mode }} {{ 'zui-button--' + type }} {{ 'borderRadius' ? 'zui-button--border-radius--' + borderRadius : '' }} {{ boxShadow ? 'zui-button--shadow--' + boxShadow : '' }} {{ inline ? 'zui-button--inline' : '' }} {{ loading ? 'zui-button--loading' : '' }} {{ disabled ? 'zui-button--disabled' : '' }} {{ fab ? 'zui-button--fab' : '' }}"
   style="{{ elementStyle }}"
 >
   <slot></slot>

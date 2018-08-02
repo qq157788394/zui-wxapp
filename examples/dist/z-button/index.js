@@ -104,6 +104,6 @@ Component({
   detached: function detached() {},
 
   relations: {},
-  externalClasses: {},
+  externalClasses: ['class-name'],
   options: {}
 });
