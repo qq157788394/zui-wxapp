@@ -1,0 +1,112 @@
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+.zui-tab {
+  height: 48px;
+}
+.zui-tab__bd {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  background-color: #fff;
+}
+.zui-tab__bd::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 200%;
+  border-bottom: 1px solid #d8dce5;
+  color: #d8dce5;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.zui-tab__bd--fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1030;
+}
+.zui-tab__item {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+.zui-tab__item::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #bdbdbd;
+  opacity: 0;
+}
+.zui-tab__item:not(.zui-tab__item--selected).active::before {
+  opacity: .24;
+}
+.zui-tab__title {
+  display: inline-block;
+  max-width: 100%;
+  height: 48px;
+  line-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  word-break: keep-all;
+  font-size: 15px;
+  font-weight: 700;
+  color: #878d99;
+}
+.zui-tab__item--selected .zui-tab__title {
+  color: #2d2f33;
+  border-bottom: 2px solid #409EFF;
+}
+.zui-tab__bd--scroll {
+  display: block;
+  white-space: nowrap;
+}
+.zui-tab__bd--scroll .zui-tab__item {
+  min-width: 80px;
+}

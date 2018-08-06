@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "tabs 标签",
+  "usingComponents": {
+    "z-tabs": "../../dist/z-tabs/index"
+  }
+}

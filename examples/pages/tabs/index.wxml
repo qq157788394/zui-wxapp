@@ -1,0 +1,9 @@
+<view class="demo-page">
+  <z-tabs
+    scroll="{{ scroll }}"
+    list="{{ list }}"
+    selected-id="{{ selectedId }}"
+    height="{{ height }}"
+    fixed="{{ fixed }}"
+    bindtabchange="onTabsChange"></z-tabs>
+</view>

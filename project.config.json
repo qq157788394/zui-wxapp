@@ -29,12 +29,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "layout",
-					"pathName": "pages/layout/index"
+					"pathName": "pages/layout/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "tabs",
+					"pathName": "pages/tabs/index"
 				}
 			]
 		}
