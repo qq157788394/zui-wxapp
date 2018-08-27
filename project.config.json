@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -40,7 +40,14 @@
 				{
 					"id": -1,
 					"name": "tabs",
-					"pathName": "pages/tabs/index"
+					"pathName": "pages/tabs/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "navigation",
+					"pathName": "pages/navigation/index",
+					"query": ""
 				}
 			]
 		}

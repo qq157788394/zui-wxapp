@@ -2,12 +2,14 @@
   "pages":[
     "pages/button/index",
     "pages/layout/index",
-    "pages/tabs/index"
+    "pages/tabs/index",
+    "pages/navigation/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
     "navigationBarTitleText": "zui-wxapp",
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom",
     "backgroundTextStyle": "dark",
     "backgroundColor": "#f9f9f9"
   },

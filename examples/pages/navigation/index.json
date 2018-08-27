@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "navigation 导航栏",
+  "usingComponents": {
+    "z-navigation": "../../dist/z-navigation/index",
+    "z-tabs": "../../dist/z-tabs/index"
+  }
+}

@@ -1,0 +1,3 @@
+<view>
+  <z-navigation type="dark" icon="home" list="{{ list }}" scroll="{{ scroll }}" selected-id="{{ selectedId }}" bindtabchange="onTabsChange"></z-navigation>
+</view>
