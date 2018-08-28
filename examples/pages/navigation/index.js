@@ -31,7 +31,12 @@ Page({
       }
     ],
     selectedId: 'tab1',
-    scroll: true
+    scroll: true,
+    navigationBarColor: {
+      statusBarColor: '#ffffff',
+      frontColor: '#ffffff',
+      backgroundColor: '#67c23a'
+    }
   },
   onLoad () {},
   onReady () {},

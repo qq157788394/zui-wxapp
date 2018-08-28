@@ -1,6 +1,26 @@
+/**
+ * @name z-navigation
+ * @author huangzhuo
+ * @description 自定义导航组件
+ * @param { String } - navigationBarColor，自定义导航颜色设置，statusBarColor: 顶部状态栏文字颜色，可选#000000和#ffffff，默认值#000000；frontColor: 导航栏文字颜色，默认值#000000；backgroundColor：导航栏背景颜色，默认值#ffffff
+ * @param { String } - icon显示内容，可选值home，back
+ * @param { String } - 导航栏文字
+ * @param { Boolean } - 是否可以滑动，导航栏为tab时有效
+ * @param { Array } - tab导航的导航选项数组对象，包含id和title
+ * @param { String, Number } - 选中的导航id
+ * @param { slot } - 自定义显示内容
+ * @example <z-navigation navigationBarColor="{{ navigationBarColor }}" title="{{ title }}"></z-navigation>
+ */
 Component({
   properties: {
-    type: String,
+    navigationBarColor: {
+      type: Object,
+      value: {
+        statusBarColor: '#000000',
+        frontColor: '#000000',
+        backgroundColor: '#ffffff'
+      }
+    },
     icon: String,
     title: String,
     scroll: {
@@ -22,7 +42,7 @@ Component({
     scrollLeft: 0
   },
   methods: {
-    getSystemInfo () {
+    _getSystemInfo () {
       const SYSTEM_INFO = wx.getSystemInfoSync()
       // 判断系统类型
       const _system = SYSTEM_INFO.system.toLowerCase()
@@ -53,10 +73,8 @@ Component({
         navigationStyle: navigationStyle,
         system: SYSTEM
       })
-      console.info(['zui:navigation'], this.data.navigationStyle)
-      console.info(['zui:system'], this.data.system)
     },
-    handleIcon () {
+    _handleIcon () {
       this.triggerEvent('tap')
     },
     _handleScroll (selectedId) {
@@ -83,12 +101,19 @@ Component({
 
       console.info('[zui:tab:change] selectedId:', selectedId)
       this.triggerEvent('tabchange', selectedId)
+    },
+    _setNavigationBarColor () {
+      wx.setNavigationBarColor({
+        frontColor: this.data.navigationBarColor.statusBarColor,
+        backgroundColor: this.data.navigationBarColor.backgroundColor
+      })
     }
   },
   behaviors: {},
   created () {},
   attached () {
-    this.getSystemInfo()
+    this._getSystemInfo()
+    this._setNavigationBarColor()
   },
   ready () {},
   moved () {},
