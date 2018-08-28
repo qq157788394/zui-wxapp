@@ -1,0 +1,109 @@
+@import "../../assets/_variable";
+
+@--tag-padding: 0 10px;
+@--tag-fill: fade(@--color-primary, 10%);
+@--tag-color: @--color-primary;
+@--tag-border: fade(@--color-primary, 20%);
+@--tag-font-size: 12px;
+@--tag-font-size-small: 11px;
+@--tag-font-size-mini: 10px;
+@--tag-border-radius: 4px;
+
+@--tag-info-fill: fade(@--color-info, 10%);
+@--tag-info-border: fade(@--color-info, 20%);
+@--tag-info-color: @--color-info;
+
+@--tag-primary-fill: fade(@--color-primary, 10%);
+@--tag-primary-border: fade(@--color-primary, 20%);
+@--tag-primary-color: @--color-primary;
+
+@--tag-success-fill: fade(@--color-success, 10%);
+@--tag-success-border: fade(@--color-success, 20%);
+@--tag-success-color: @--color-success;
+
+@--tag-warning-fill: fade(@--color-warning, 10%);
+@--tag-warning-border: fade(@--color-warning, 20%);
+@--tag-warning-color: @--color-warning;
+
+@--tag-danger-fill: fade(@--color-danger, 10%);
+@--tag-danger-border: fade(@--color-danger, 20%);
+@--tag-danger-color: @--color-danger;
+
+:host {
+  flex: none;
+  display: inline-flex;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+// size
+.zui-tag {
+  display: inline-flex;
+  flex: none;
+  background-color: @--tag-fill;
+  color: @--tag-color;
+  box-sizing: inherit;
+  border: 1px solid @--tag-border;
+  border-radius: @--tag-border-radius;
+  font-size: @--tag-font-size;
+  padding: 4px 8px;
+  line-height: 1.5;
+  white-space: nowrap;
+
+  &.zui-tag--medium {
+    font-size: @--tag-font-size;
+    padding: 4px 8px;
+    line-height: 1.5;
+  }
+
+  &.zui-tag--small {
+    font-size: @--tag-font-size-small;
+    padding: 2px 6px;
+    line-height: 1.5;
+  }
+
+  &.zui-tag--mini {
+    font-size: @--tag-font-size-mini;
+    padding: 2px 4px;
+    line-height: 1.5;
+  }
+}
+
+// type
+.zui-tag {
+  &.zui-tag--primary {
+    background-color: @--tag-primary-fill;
+    color: @--tag-primary-color;
+    border-color: @--tag-primary-border;
+  }
+
+  &.zui-tag--success {
+    background-color: @--tag-success-fill;
+    color: @--tag-success-color;
+    border-color: @--tag-success-border;
+  }
+
+  &.zui-tag--warning {
+    background-color: @--tag-warning-fill;
+    color: @--tag-warning-color;
+    border-color: @--tag-warning-border;
+  }
+
+  &.zui-tag--danger {
+    background-color: @--tag-danger-fill;
+    color: @--tag-danger-color;
+    border-color: @--tag-danger-border;
+  }
+
+  &.zui-tag--info {
+    background-color: @--tag-info-fill;
+    color: @--tag-info-color;
+    border-color: @--tag-info-border;
+  }
+}
+
+.zui-tag {
+  .zui-tag--hit {
+    border-color: transparent;
+  }
+}

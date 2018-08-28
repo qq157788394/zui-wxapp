@@ -1,0 +1,3 @@
+<view class="class-name zui-tag {{ 'zui-tag--' + size }} {{ 'zui-tag--' + type }} {{ hit ? 'zui-tag--hit' : '' }}">
+  <slot></slot>
+</view>

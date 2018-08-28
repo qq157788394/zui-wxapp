@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "tag 标签",
+  "usingComponents": {
+    "z-tag": "../../dist/z-tag/index"
+  }
+}

@@ -1,0 +1,11 @@
+<view>
+  <z-tag wx:for="{{ 10 }}" wx:key="{{ item }}" for-item="item" style="margin-right: 8px;" size="medium">标签{{ item }}</z-tag>
+</view>
+
+<view>
+  <z-tag wx:for="{{ 10 }}" wx:key="{{ item }}" for-item="item" style="margin-right: 8px;" size="small">标签{{ item }}</z-tag>
+</view>
+
+<view>
+  <z-tag wx:for="{{ 10 }}" wx:key="{{ item }}" for-item="item" style="margin-right: 8px;" size="mini">标签{{ item }}</z-tag>
+</view>
