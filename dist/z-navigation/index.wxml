@@ -1,0 +1,76 @@
+<view
+  style="padding-top: {{ navigationStyle.paddingTop }}; height: {{ navigationStyle.height }}; color: {{ navigationBarColor.frontColor }}; background-color: {{ navigationBarColor.backgroundColor }}"
+  class="class-name zui-navigation"
+>
+  <view class="zui-navigation__hd" hover-class="active" wx:if="{{ icon }}" bindtap="_handleIcon">
+    <view class="iconfont zui-navigation-icon icon-back" wx:if="{{ icon === 'back' }}"></view>
+    <view class="iconfont zui-navigation-icon icon-home" wx:elif="{{ icon === 'home' }}"></view>
+  </view>
+  <view class="zui-navigation__bd {{ !icon && !(list || selectedId) ? 'zui-navigation__bd--no-icon' : '' }}">
+    <!-- 显示标题，start -->
+    <block wx:if="{{ title }}">{{ title }}</block>
+    <!-- 显示标题，end -->
+
+    <!-- 显示tab，start -->
+    <block wx:elif="{{ list || selectedId }}">
+      <view
+        class="zui-tab"
+        style="height: {{ navigationStyle.tabHeight }}"
+      >
+        <block wx:if="{{ scroll }}">
+          <scroll-view
+            id="scroll-view"
+            class="zui-tab__bd zui-tab__bd--scroll"
+            scroll-x
+            scroll-with-animation
+            scroll-left="{{ scrollLeft }}"
+            style="height: {{ navigationStyle.tabHeight }}"
+          >
+            <template
+              is="zui-tab-list"
+              data="{{ list, selectedId, navigationStyle }}"
+            />
+          </scroll-view>
+        </block>
+        <block wx:else>
+          <view
+            class="zui-tab__bd"
+            style="height: {{ navigationStyle.tabHeight }}"
+          >
+            <template
+              is="zui-tab-list"
+              data="{{ list, selectedId, navigationStyle }}"
+            />
+          </view>
+        </block>
+      </view>
+
+      <template name="zui-tab-list">
+        <view
+          wx:for="{{ list }}"
+          wx:key="id"
+          class="zui-tab__item {{ selectedId == item.id ? 'zui-tab__item--selected' : '' }}"
+          hover-class="active"
+          id="item-{{ item.id }}"
+          data-item-id="{{ item.id }}"
+          bindtap="_handleTabChange"
+        >
+          <view
+            class="zui-tab__title"
+            style="height: {{ navigationStyle.tabHeight }}; line-height: {{ navigationStyle.tabHeight }};"
+          >
+            {{ item.title }}
+          </view>
+        </view>
+      </template>
+
+    </block>
+    <!-- 显示tab，end -->
+
+    <!-- 显示slot，start -->
+    <block wx:else>
+      <slot></slot>
+    </block>
+    <!-- 显示slot，end -->
+  </view>
+</view>

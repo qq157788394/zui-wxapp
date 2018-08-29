@@ -1,0 +1,52 @@
+<view
+  class="class-name zui-tab"
+  style="{{ height ? 'height:' + height + 'px' : '' }}"
+>
+  <block wx:if="{{ scroll }}">
+    <scroll-view
+      id="scroll-view"
+      class="zui-tab__bd zui-tab__bd--scroll {{ fixed ? 'zui-tab__bd--fixed' : '' }}"
+      scroll-x
+      scroll-with-animation
+      scroll-left="{{ scrollLeft }}"
+      style="height: {{ height ? height + 'px' : 'auto' }}"
+    >
+      <template
+        is="zui-tab-list"
+        data="{{ list, selectedId, height }}"
+      />
+    </scroll-view>
+  </block>
+  <block wx:else>
+    <view
+      class="zui-tab__bd {{ fixed ? 'zui-tab__bd--fixed' : '' }}"
+      style="height: {{ height ? height + 'px' : 'auto' }}"
+    >
+      <template
+        is="zui-tab-list"
+        data="{{ list, selectedId, height }}"
+      />
+    </view>
+  </block>
+</view>
+<!-- 插入内容 -->
+<slot></slot>
+
+<template name="zui-tab-list">
+  <view
+    wx:for="{{ list }}"
+    wx:key="id"
+    class="item-class-name zui-tab__item {{ selectedId == item.id ? 'zui-tab__item--selected' : '' }}"
+    hover-class="active"
+    id="item-{{ item.id }}"
+    data-item-id="{{ item.id }}"
+    bindtap="_handleTabChange"
+  >
+    <view
+      class="zui-tab__title"
+      style="{{ height ? 'height:' + height + 'px;line-height:' + height + 'px' : '' }}"
+    >
+      {{ item.title }}
+    </view>
+  </view>
+</template>

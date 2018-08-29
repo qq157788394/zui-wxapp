@@ -1,0 +1,6 @@
+<view
+  class="class-name zui-col {{ 'zui-col--' + span }} {{ offset ? 'zui-col--offset-' + offset : '' }}"
+  style="{{ elementStyle }}"
+>
+  <slot></slot>
+</view>
