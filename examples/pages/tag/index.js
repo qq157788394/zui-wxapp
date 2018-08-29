@@ -1,5 +1,18 @@
 Page({
-  data: {},
+  data: {
+    type: [
+      'primary',
+      'success',
+      'warning',
+      'danger',
+      'info'
+    ],
+    size: [
+      'medium',
+      'small',
+      'mini'
+    ]
+  },
   onLoad () {},
   onReady () {},
   onShow () {},

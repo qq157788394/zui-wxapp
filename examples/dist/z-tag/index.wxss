@@ -90,6 +90,12 @@
   color: #878d99;
   border-color: rgba(135, 141, 153, 0.2);
 }
-.zui-tag .zui-tag--hit {
+.zui-tag.zui-tag--hit {
   border-color: transparent;
+}
+.zui-tag.zui-tag--cricle {
+  border-radius: 16px;
+}
+.zui-tag.zui-tag--mark {
+  border-radius: 8px 4px 4px 0;
 }

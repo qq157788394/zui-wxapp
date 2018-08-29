@@ -7,7 +7,10 @@ Component({
     type: {
       type: String,
       value: 'primary'
-    }
+    },
+    hit: Boolean,
+    cricle: Boolean,
+    mark: Boolean
   },
   data: {},
   methods: {},

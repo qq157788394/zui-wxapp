@@ -103,7 +103,19 @@
 }
 
 .zui-tag {
-  .zui-tag--hit {
+
+  // 无边框
+  &.zui-tag--hit {
     border-color: transparent;
+  }
+
+  // 圆角
+  &.zui-tag--cricle {
+    border-radius: 16px;
+  }
+
+  // mark
+  &.zui-tag--mark {
+    border-radius: 8px @--tag-border-radius @--tag-border-radius 0;
   }
 }

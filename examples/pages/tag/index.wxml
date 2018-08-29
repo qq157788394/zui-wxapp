@@ -1,11 +1,64 @@
 <view>
-  <z-tag wx:for="{{ 10 }}" wx:key="{{ item }}" for-item="item" style="margin-right: 8px;" size="medium">标签{{ item }}</z-tag>
+  <z-tag
+    wx:for="{{ type }}"
+    wx:key="{{ item }}"
+    for-item="item"
+    style="margin-right: 8px;"
+    type="{{ item }}"
+  >
+    {{ item }}
+  </z-tag>
 </view>
 
 <view>
-  <z-tag wx:for="{{ 10 }}" wx:key="{{ item }}" for-item="item" style="margin-right: 8px;" size="small">标签{{ item }}</z-tag>
+  <z-tag
+    wx:for="{{ size }}"
+    wx:key="{{ item }}"
+    for-item="item"
+    style="margin-right: 8px;"
+    size="{{ item }}"
+  >
+    {{ item }}
+  </z-tag>
 </view>
 
 <view>
-  <z-tag wx:for="{{ 10 }}" wx:key="{{ item }}" for-item="item" style="margin-right: 8px;" size="mini">标签{{ item }}</z-tag>
+  <z-tag
+    wx:for="{{ type }}"
+    wx:key="{{ item }}"
+    for-item="item"
+    type="{{ item }}"
+    style="margin-right: 8px;"
+    hit
+  >
+    {{ item }} hit
+  </z-tag>
+</view>
+
+<view>
+  <z-tag
+    wx:for="{{ type }}"
+    wx:key="{{ item }}"
+    for-item="item"
+    type="{{ item }}"
+    style="margin-right: 8px;"
+    size="small"
+    cricle
+  >
+    {{ item }} cricle
+  </z-tag>
+</view>
+
+<view>
+  <z-tag
+    wx:for="{{ type }}"
+    wx:key="{{ item }}"
+    for-item="item"
+    type="{{ item }}"
+    style="margin-right: 8px;"
+    size="mini"
+    mark
+  >
+    {{ item }} mark
+  </z-tag>
 </view>
