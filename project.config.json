@@ -11,6 +11,7 @@
 	"compileType": "miniprogram",
 	"appid": "wx0ffbc046375c3bc6",
 	"projectname": "zui-wxapp",
+	"libVersion": "2.2.5",
 	"condition": {
 		"search": {
 			"current": -1,

@@ -1,4 +1,8 @@
 <view class="zui-badage">
   <slot></slot>
-  <label wx:if="{{ !hidden }}" class="class-name zui-badage__content {{ isDot ? 'is-dot' : '' }}">{{ !isDot ? value : '' }}</label>
+  <label wx:if="{{ !hidden && (value > 0 || isDot) }}" class="class-name zui-badage__content {{ isDot ? 'is-dot' : '' }}">
+    <block wx:if="{{ isDot }}"></block>
+    <block wx:elif="{{ max && (value > max) }}">{{ max }}+</block>
+    <block wx:else>{{ value }}</block>
+  </label>
 </view>

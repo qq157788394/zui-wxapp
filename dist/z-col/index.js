@@ -18,13 +18,12 @@ Component({
   },
   data: {},
   methods: {},
-  behaviors: {},
-  created: function created() {},
-  attached: function attached() {},
-  ready: function ready() {},
-  moved: function moved() {},
-  detached: function detached() {},
-
+  behaviors: [],
+  created () {},
+  attached () {},
+  ready () {},
+  moved () {},
+  detached () {},
   relations: {
     '../z-row/index': {
       type: 'parent'
@@ -32,4 +31,4 @@ Component({
   },
   externalClasses: ['class-name'],
   options: {}
-});
+})

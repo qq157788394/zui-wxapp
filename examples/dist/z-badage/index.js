@@ -4,6 +4,7 @@ Component({
       type: [Number, String]
     },
     isDot: Boolean,
+    max: Number,
     hidden: Boolean
   },
   data: {},
@@ -11,7 +12,9 @@ Component({
   behaviors: [],
   created () {},
   attached () {},
-  ready () {},
+  ready () {
+    console.log(this.properties)
+  },
   moved () {},
   detached () {},
   relations: {},
