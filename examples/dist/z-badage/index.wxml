@@ -1,0 +1,4 @@
+<view class="zui-badage">
+  <slot></slot>
+  <label wx:if="{{ !hidden }}" class="class-name zui-badage__content {{ isDot ? 'is-dot' : '' }}">{{ !isDot ? value : '' }}</label>
+</view>

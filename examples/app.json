@@ -4,7 +4,8 @@
     "pages/layout/index",
     "pages/tabs/index",
     "pages/navigation/index",
-    "pages/tag/index"
+    "pages/tag/index",
+    "pages/badage/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

@@ -27,7 +27,7 @@ gulp.task('compile-js', () => {
       .pipe($.eslint())
       .pipe($.eslint.format('../node_modules/eslint-friendly-formatter'))
       .pipe($.eslint.failAfterError())
-      .pipe($.babel())
+      // .pipe($.babel())
       // .pipe($.uglify())
       .pipe(gulp.dest('../examples/dist/'))
 })

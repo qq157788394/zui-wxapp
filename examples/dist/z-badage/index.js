@@ -1,9 +1,10 @@
 Component({
   properties: {
-    icon: {
-      type: String,
-      value: 'icon-wechat'
-    }
+    value: {
+      type: [Number, String]
+    },
+    isDot: Boolean,
+    hidden: Boolean
   },
   data: {},
   methods: {},
@@ -14,6 +15,6 @@ Component({
   moved () {},
   detached () {},
   relations: {},
-  externalClasses: [],
+  externalClasses: ['class-name'],
   options: {}
 })

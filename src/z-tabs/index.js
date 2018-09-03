@@ -51,7 +51,7 @@ Component({
       this.triggerEvent('tabchange', selectedId)
     }
   },
-  behaviors: {},
+  behaviors: [],
   created () {},
   attached () {},
   ready () {},

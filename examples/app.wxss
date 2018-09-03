@@ -32,6 +32,7 @@
 .demo-page {
   background-color: #f5f7fa;
   overflow: hidden;
+  min-height: 100vh;
 }
 .demo-view {
   position: relative;

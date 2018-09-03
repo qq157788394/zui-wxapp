@@ -109,7 +109,7 @@ Component({
       })
     }
   },
-  behaviors: {},
+  behaviors: [],
   created () {},
   attached () {
     this._getSystemInfo()

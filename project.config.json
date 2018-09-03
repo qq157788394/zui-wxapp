@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -54,6 +54,11 @@
 					"name": "tag",
 					"pathName": "pages/tag/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "badage",
+					"pathName": "pages/badage/index"
 				}
 			]
 		}

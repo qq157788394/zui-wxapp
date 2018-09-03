@@ -14,7 +14,7 @@ Component({
   },
   data: {},
   methods: {},
-  behaviors: {},
+  behaviors: [],
   created () {},
   attached () {},
   ready () {},

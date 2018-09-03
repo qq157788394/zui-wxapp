@@ -30,6 +30,7 @@ module.exports = {
       App: true,
       Page: true,
       Component: true,
+      Behavior: true,
       wx: true,
       getApp: true,
       getPage: true,

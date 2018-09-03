@@ -97,7 +97,7 @@ Component({
       this.triggerEvent('error', detail)
     }
   },
-  behaviors: {},
+  behaviors: [],
   created () {},
   attached () {},
   ready () {},

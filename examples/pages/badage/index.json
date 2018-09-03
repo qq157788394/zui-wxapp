@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "badage 徽章",
+  "usingComponents": {
+    "z-badage": "../../dist/z-badage/index",
+    "z-button": "../../dist/z-button/index"
+  }
+}

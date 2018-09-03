@@ -69,42 +69,41 @@ Component({
   },
   data: {},
   methods: {
-    bindTap: function bindTap() {
-      this.triggerEvent('bind:tap');
-      this.triggerEvent('bindtap');
+    bindTap () {
+      this.triggerEvent('bind:tap')
+      this.triggerEvent('bindtap')
     },
-    catchTap: function catchTap() {
-      this.triggerEvent('catch:tap');
-      this.triggerEvent('catchtap');
+    catchTap () {
+      this.triggerEvent('catch:tap')
+      this.triggerEvent('catchtap')
     },
-    longtap: function longtap() {
-      this.triggerEvent('longtap');
+    longtap () {
+      this.triggerEvent('longtap')
     },
-    bindgetuserinfo: function bindgetuserinfo(e) {
-      var detail = e.detail || {};
-      this.triggerEvent('getuserinfo', detail);
+    bindgetuserinfo (e) {
+      const detail = e.detail || {}
+      this.triggerEvent('getuserinfo', detail)
     },
-    bindcontact: function bindcontact(e) {
-      var detail = e.detail || {};
-      this.triggerEvent('contact', detail);
+    bindcontact (e) {
+      const detail = e.detail || {}
+      this.triggerEvent('contact', detail)
     },
-    bindgetphonenumber: function bindgetphonenumber(e) {
-      var detail = e.detail || {};
-      this.triggerEvent('getphonenumber', detail);
+    bindgetphonenumber (e) {
+      const detail = e.detail || {}
+      this.triggerEvent('getphonenumber', detail)
     },
-    binderror: function binderror(e) {
-      var detail = e.detail || {};
-      this.triggerEvent('error', detail);
+    binderror (e) {
+      const detail = e.detail || {}
+      this.triggerEvent('error', detail)
     }
   },
-  behaviors: {},
-  created: function created() {},
-  attached: function attached() {},
-  ready: function ready() {},
-  moved: function moved() {},
-  detached: function detached() {},
-
+  behaviors: [],
+  created () {},
+  attached () {},
+  ready () {},
+  moved () {},
+  detached () {},
   relations: {},
   externalClasses: ['class-name'],
   options: {}
-});
+})

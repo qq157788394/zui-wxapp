@@ -1,0 +1,10 @@
+<view class="demo-page demo-px-1">
+  <view class="demo-title">badage 徽章</view>
+  <z-badage value="2" wx:for="{{ 4 }}" for-item="item" wx:key="item">
+    <z-button size="small" type="primary">button {{ item }}</z-button>
+  </z-badage>
+
+  <z-badage is-dot hidden>
+    <z-button size="small" type="primary">dot</z-button>
+  </z-badage>
+</view>
