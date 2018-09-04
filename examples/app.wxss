@@ -23,6 +23,9 @@
 -------------------------- */
 /* Font
 -------------------------- */
+view {
+  box-sizing: border-box;
+}
 .demo-block {
   display: block;
 }

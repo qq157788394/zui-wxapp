@@ -1,0 +1,10 @@
+<view
+  bind:tap="handleVisible"
+  class="mask-class zui-popup-mask {{ visible ? 'is-show' : '' }}"
+></view>
+
+<view
+  class="class-name zui-popup {{ visible ? 'is-show' : '' }}"
+>
+  <slot></slot>
+</view>

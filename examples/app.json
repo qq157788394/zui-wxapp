@@ -6,7 +6,8 @@
     "pages/navigation/index",
     "pages/tag/index",
     "pages/badage/index",
-    "pages/stepper/index"
+    "pages/stepper/index",
+    "pages/popup/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

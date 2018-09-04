@@ -1,5 +1,5 @@
 <view
-  class="zui-stepper {{ 'zui-stepper--' + type }} {{ disabled ? 'zui-stepper--disabled' : '' }}"
+  class="class-name zui-stepper {{ 'zui-stepper--' + type }} {{ disabled ? 'zui-stepper--disabled' : '' }}"
 >
   <view
     bindtap="handleChange"

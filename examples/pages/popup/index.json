@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "popup 弹出层",
+  "usingComponents": {
+    "z-popup": "../../dist/z-popup/index",
+    "z-button": "../../dist/z-button/index"
+  }
+}

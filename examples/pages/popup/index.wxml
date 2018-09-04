@@ -1,0 +1,6 @@
+<view class="demo-page demo-p-1">
+  <z-button bind:tap="handleVisible" type="primary">打开</z-button>
+  <z-popup bind:change="handleVisible" visible="{{ visible }}">
+    <view wx:for="{{ 10 }}" for-item="item" wx:key="item">123123123</view>
+  </z-popup>
+</view>
