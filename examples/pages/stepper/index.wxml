@@ -1,0 +1,17 @@
+<view class="demo-page demo-px-1 demo-pt-1">
+  <view>
+    <z-stepper bind:change="bindChange" value="{{ value }}" step="{{ step }}" min="{{ min }}" max="{{ max }}"></z-stepper>
+  </view>
+
+  <view>
+    <z-stepper bind:change="bindChange" value="{{ value }}"></z-stepper>
+  </view>
+
+  <view>
+    <z-stepper bind:change="bindChange" value="{{ value }}" min="{{ min }}"></z-stepper>
+  </view>
+
+  <view>
+    <z-stepper bind:change="bindChange" value="{{ value }}" min="{{ 0 }}" transition></z-stepper>
+  </view>
+</view>

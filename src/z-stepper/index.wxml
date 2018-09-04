@@ -1,0 +1,25 @@
+<view
+  class="zui-stepper {{ 'zui-stepper--' + type }} {{ disabled ? 'zui-stepper--disabled' : '' }}"
+>
+  <view
+    bindtap="handleChange"
+    data-type="minus"
+    data-disabled-minus="{{ (min || min === 0) && (value <= min)  }}"
+    class="iconfont zui-stepper-icon icon-minus-circle-outline {{ (min || min === 0) && (value <= min) ? 'zui-stepper-icon--disabled' : '' }} {{ transition ? 'pop' : '' }} {{ transition & value > 0 ? 'mov' : '' }}"
+    hover-class="active"
+    style="{{ iconColor ? 'color:' + iconColor + ';' : '' }}"
+  ></view>
+  <view
+    class="zui-stepper__number {{ transition ? 'pop' : '' }} {{ transition & value > 0 ? 'mov' : '' }}"
+  >
+    {{ value }}
+  </view>
+  <view
+    bindtap="handleChange"
+    data-type="plus"
+    data-disabled-plus="{{ max && (value >= max) }}"
+    class="iconfont zui-stepper-icon icon-plus-circle {{ max && (value >= max) ? 'zui-stepper-icon--disabled' : '' }}"
+    hover-class="active"
+    style="{{ iconColor ? 'color:' + iconColor + ';' : '' }}"
+  ></view>
+</view>

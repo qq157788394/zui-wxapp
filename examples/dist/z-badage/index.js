@@ -12,9 +12,7 @@ Component({
   behaviors: [],
   created () {},
   attached () {},
-  ready () {
-    console.log(this.properties)
-  },
+  ready () {},
   moved () {},
   detached () {},
   relations: {},

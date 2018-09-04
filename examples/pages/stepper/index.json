@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "stepper 步进器",
+  "usingComponents": {
+    "z-stepper": "../../dist/z-stepper/index"
+  }
+}

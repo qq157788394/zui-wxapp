@@ -104,6 +104,9 @@
   opacity: .24;
 }
 .zui-navigation-icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+          flex: none;
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -120,6 +123,7 @@
   line-height: 1;
   width: 1em;
   color: inherit;
+  box-sizing: inherit;
 }
 .zui-navigation__bd {
   -webkit-box-flex: 1;
