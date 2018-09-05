@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "badge 徽章",
+  "usingComponents": {
+    "z-badge": "../../dist/z-badge/index",
+    "z-button": "../../dist/z-button/index"
+  }
+}

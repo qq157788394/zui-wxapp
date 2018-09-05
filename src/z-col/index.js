@@ -7,6 +7,7 @@
  * @prop { String } - element-style，style声明
  * @prop { String } - class-name，组件class
  */
+
 Component({
   properties: {
     span: {
@@ -19,16 +20,20 @@ Component({
   data: {},
   methods: {},
   behaviors: [],
-  created () {},
-  attached () {},
-  ready () {},
-  moved () {},
-  detached () {},
   relations: {
     '../z-row/index': {
       type: 'parent'
     }
   },
   externalClasses: ['class-name'],
-  options: {}
+  options: {},
+  lifetimes: {
+    created () {},
+    attached () {},
+    ready () {},
+    moved () {},
+    detached () {}
+  },
+  pageLifetimes: {},
+  definitionFilter () {}
 })

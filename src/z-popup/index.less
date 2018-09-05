@@ -1,12 +1,12 @@
 @import "../../assets/_variable";
 @zui-popup-mask-background: fade(#000000, 50%);
 @zui-popup-mask-zindex: @zindex-modal-background;
-@zui-popup-mask-transition: all 200ms cubic-bezier(.645,.045,.355,1);
+@zui-popup-mask-transition: all 200ms ease;
 
 @zui-popup-zindex: @zindex-modal;
 @zui-popup-shadow: @--box-shadow-dark;
 @zui-popup-background: @--fill-base;
-@zui-popup-transition: all 300ms ease-in-out;
+@zui-popup-transition: all 300ms ease;
 
 :host {
   box-sizing: border-box;
@@ -47,7 +47,7 @@
   box-shadow: @zui-popup-shadow;
   transform: translate3d(0, 100%, 0);
   transform-origin: center;
-  transition: @zui-popup-mask-transition;
+  transition: @zui-popup-transition;
   visibility: hidden;
   overflow-x: hidden;
   overflow-y: auto;

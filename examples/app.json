@@ -5,7 +5,7 @@
     "pages/tabs/index",
     "pages/navigation/index",
     "pages/tag/index",
-    "pages/badage/index",
+    "pages/badge/index",
     "pages/stepper/index",
     "pages/popup/index"
   ],

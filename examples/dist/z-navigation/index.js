@@ -11,6 +11,7 @@
  * @param { slot } - 自定义显示内容
  * @example <z-navigation navigationBarColor="{{ navigationBarColor }}" title="{{ title }}"></z-navigation>
  */
+
 Component({
   properties: {
     navigationBarColor: {
@@ -110,15 +111,19 @@ Component({
     }
   },
   behaviors: [],
-  created () {},
-  attached () {
-    this._getSystemInfo()
-    this._setNavigationBarColor()
-  },
-  ready () {},
-  moved () {},
-  detached () {},
   relations: {},
   externalClasses: ['class-name'],
-  options: {}
+  options: {},
+  lifetimes: {
+    created () {},
+    attached () {
+      this._getSystemInfo()
+      this._setNavigationBarColor()
+    },
+    ready () {},
+    moved () {},
+    detached () {}
+  },
+  pageLifetimes: {},
+  definitionFilter () {}
 })

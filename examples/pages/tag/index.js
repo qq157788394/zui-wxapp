@@ -1,6 +1,6 @@
 Page({
   data: {
-    type: [
+    color: [
       'primary',
       'success',
       'warning',

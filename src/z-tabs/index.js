@@ -1,3 +1,13 @@
+/**
+ * z-tabs 标签页
+ * @desc 标签页
+ *
+ * @prop { Boolean } scroll - 是否可以左右滑动
+ * @prop { Boolean } fixed - 是否置顶
+ * @prop { Number } height - 自定义高度，单位px，默认值48
+ * @prop { Array } list - 标签列表 [{ id：'id', title: 'title' }, {......}]
+ * @prop { String, Number } selectedId - 选中的标签id
+ */
 Component({
   properties: {
     scroll: {
@@ -10,7 +20,7 @@ Component({
     },
     height: {
       type: Number,
-      value: 0
+      value: 48
     },
     list: {
       type: Array,
@@ -52,12 +62,16 @@ Component({
     }
   },
   behaviors: [],
-  created () {},
-  attached () {},
-  ready () {},
-  moved () {},
-  detached () {},
   relations: {},
   externalClasses: ['class-name', 'item-class-name'],
-  options: {}
+  options: {},
+  lifetimes: {
+    created () {},
+    attached () {},
+    ready () {},
+    moved () {},
+    detached () {}
+  },
+  pageLifetimes: {},
+  definitionFilter () {}
 })

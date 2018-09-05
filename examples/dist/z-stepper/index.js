@@ -11,6 +11,7 @@
  * @prop { String } type - 类型，默认primary，可选值primary, success, warning, danger, info
  * @prop { Boolean } transition - 动画选项，启用后，为0的时候会隐藏减号，跟外卖平台添加商品一样，该模式min值必须设置为0
  */
+
 Component({
   properties: {
     value: Number,
@@ -72,12 +73,16 @@ Component({
     }
   },
   behaviors: [],
-  created () {},
-  attached () {},
-  ready () {},
-  moved () {},
-  detached () {},
   relations: {},
   externalClasses: ['class-name'],
-  options: {}
+  options: {},
+  lifetimes: {
+    created () {},
+    attached () {},
+    ready () {},
+    moved () {},
+    detached () {}
+  },
+  pageLifetimes: {},
+  definitionFilter () {}
 })

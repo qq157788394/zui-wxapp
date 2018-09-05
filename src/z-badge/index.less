@@ -1,9 +1,9 @@
 @import "../../assets/_variable";
-@zui-badage-font-size: 20px;
-@zui-badage-size: 1.6em;
-@zui-badage-fill: @--color-danger;
-@zui-badage-color: @--color-white;
-@zui-badage-border-radius: @zui-badage-size / 2;
+@zui-badge-font-size: 20px;
+@zui-badge-size: 1.6em;
+@zui-badge-fill: @--color-danger;
+@zui-badge-color: @--color-white;
+@zui-badge-border-radius: @zui-badge-size / 2;
 
 :host {
   flex: none;
@@ -12,14 +12,14 @@
   box-sizing: border-box;
 }
 
-.zui-badage {
+.zui-badge {
   position: relative;
   vertical-align: middle;
   display: inline-flex;
   box-sizing: inherit;
 }
 
-.zui-badage__content {
+.zui-badge__content {
   position: absolute;
   top: -0.8em;
   right: 0;
@@ -27,13 +27,13 @@
   justify-content: center;
   align-items: center;
   transform: translateX(50%) scale(0.5);
-  color: @zui-badage-color;
-  background-color: @zui-badage-fill;
-  border-radius: @zui-badage-border-radius;
-  line-height: @zui-badage-size;
-  font-size: @zui-badage-font-size;
+  color: @zui-badge-color;
+  background-color: @zui-badge-fill;
+  border-radius: @zui-badge-border-radius;
+  line-height: @zui-badge-size;
+  font-size: @zui-badge-font-size;
   padding: 0 .4em;
-  min-width: @zui-badage-size;
+  min-width: @zui-badge-size;
   box-shadow: 0 0 0 1px currentColor;
   white-space: nowrap;
   z-index: 10;

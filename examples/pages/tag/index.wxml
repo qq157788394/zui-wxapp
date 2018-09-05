@@ -1,10 +1,10 @@
 <view>
   <z-tag
-    wx:for="{{ type }}"
+    wx:for="{{ color }}"
     wx:key="{{ item }}"
     for-item="item"
     style="margin-right: 8px;"
-    type="{{ item }}"
+    color="{{ item }}"
   >
     {{ item }}
   </z-tag>
@@ -24,10 +24,10 @@
 
 <view>
   <z-tag
-    wx:for="{{ type }}"
+    wx:for="{{ color }}"
     wx:key="{{ item }}"
     for-item="item"
-    type="{{ item }}"
+    color="{{ item }}"
     style="margin-right: 8px;"
     hit
   >
@@ -37,10 +37,10 @@
 
 <view>
   <z-tag
-    wx:for="{{ type }}"
+    wx:for="{{ color }}"
     wx:key="{{ item }}"
     for-item="item"
-    type="{{ item }}"
+    color="{{ item }}"
     style="margin-right: 8px;"
     size="small"
     cricle
@@ -51,10 +51,10 @@
 
 <view>
   <z-tag
-    wx:for="{{ type }}"
+    wx:for="{{ color }}"
     wx:key="{{ item }}"
     for-item="item"
-    type="{{ item }}"
+    color="{{ item }}"
     style="margin-right: 8px;"
     size="mini"
     mark

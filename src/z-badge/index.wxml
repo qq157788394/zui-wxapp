@@ -1,6 +1,6 @@
-<view class="zui-badage">
+<view class="zui-badge">
   <slot></slot>
-  <label wx:if="{{ !hidden && (value > 0 || isDot) }}" class="class-name zui-badage__content {{ isDot ? 'is-dot' : '' }}">
+  <label wx:if="{{ !hidden && (value > 0 || isDot) }}" class="class-name zui-badge__content {{ isDot ? 'is-dot' : '' }}">
     <block wx:if="{{ isDot }}"></block>
     <block wx:elif="{{ max && (value > max) }}">{{ max }}+</block>
     <block wx:else>{{ value }}</block>
