@@ -1,0 +1,127 @@
+@import "../../assets/_variable";
+
+@zui-field-color-text: @--color-text-regular;
+@zui-field-color-placeholder: @--color-text-placeholder;
+@zui-field-color-disabled: @--color-text-secondary;
+@zui-field-fill: @--fill-base;
+@zui-field-font-size: @--font-size-root;
+@zui-field-font-size-small: @--font-size-base;
+@zui-field-height: 56px;
+@zui-field-height-small: 48px;
+
+@zui-field-font-size-counter: @--font-size-small;
+
+:host {
+  flex: none;
+  box-sizing: border-box;
+  color: @zui-field-color-text;
+}
+
+.zui-field {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: @zui-field-height;
+  line-height: @zui-field-height;
+  font-size: @zui-field-font-size;
+  background-color: @zui-field-fill;
+  box-sizing: inherit;
+
+  &.zui-field--small {
+    line-height: @zui-field-height-small;
+    height: @zui-field-height-small;
+    font-size: @zui-field-font-size-small;
+
+    .zui-input {
+      height: @zui-field-height-small;
+    }
+  }
+
+  &.divider {
+    &::after {
+      .setBottomLine();
+    }
+  }
+}
+
+.zui-field__hd {
+  position: relative;
+  flex: none;
+  width: 6em;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: inherit;
+
+  &.label-divider {
+    &::after {
+      .setRightLine();
+    }
+  }
+}
+
+.zui-field__bd {
+  position: relative;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  box-sizing: inherit;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.zui-field-placeholder {
+  color: @zui-field-color-placeholder;
+}
+
+.zui-fiedl-disabled {
+  color: @zui-field-color-disabled;
+}
+
+.zui-input {
+  flex: auto;
+  display: block;
+  line-height: inherit;
+  font-size: inherit;
+  height: @zui-field-height;
+  box-sizing: inherit;
+}
+
+.zui-field--textarea {
+  height: auto;
+  line-height: 1.5;
+  box-sizing: inherit;
+
+  .zui-field__hd,
+  .zui-field__bd {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: stretch;
+  }
+}
+
+.zui-textarea {
+  flex: auto;
+  display: block;
+  line-height: inherit;
+  min-height: 72px;
+  font-size: inherit;
+  width: 100%;
+  height: auto;
+  text-align: justify;
+
+  &.zui-textarea--has-counter {
+    margin-bottom: 16px;
+  }
+}
+
+.zui-field-counter {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  line-height: 1.15;
+  font-family: Tahoma;
+  font-size: @zui-field-font-size-counter;
+  color: @zui-field-color-placeholder;
+}

@@ -1,0 +1,70 @@
+<view
+  class="class-name zui-field {{ mode === 'textarea' ? 'zui-field--textarea' : '' }} {{ divider ? 'divider' : '' }} {{ size === 'small' ? 'zui-field--small' : '' }}"
+>
+  <view
+    class="label-class zui-field__hd {{ labelDivider ? 'label-divider' : '' }}"
+    style="{{ labelWidth ? 'width:' + labelWidth + ';' : '' }}"
+    wx:if="{{ label }}"
+  >
+    {{ label }}
+  </view>
+
+  <view class="zui-field__bd">
+    <input
+      wx:if="{{ mode === 'input' }}"
+      class="input-class zui-input {{ disabled ? 'zui-field-disabled' : '' }}"
+      value="{{ value }}"
+      type="{{ type }}"
+      password="{{ password }}"
+      placeholder="{{ placeholder }}"
+      placeholder-style="{{ placeholderStyle }}"
+      placeholder-class="placeholder-class zui-field-placeholder"
+      disabled="{{ disabled }}"
+      maxlength="{{ maxlength }}"
+      cursor-spacing="{{ cursorSpacing }}"
+      focus="{{ focus }}"
+      confirm-type="{{ confirmType }}"
+      confirm-hold="{{ confirmHold }}"
+      cursor="{{ cursor }}"
+      selection-start="{{ selectionStart }}"
+      selection-end="{{ selectionEnd }}"
+      adjust-position="{{ adjustPosition }}"
+      bindinput="_bindinput"
+      bindfocus="_bindfocus"
+      bindblur="_bindblur"
+      bindconfirm="_bindconfirm"
+    />
+
+    <textarea
+      wx:elif="{{ mode === 'textarea' }}"
+      class="textarea-class zui-textarea {{ counter ? 'zui-textarea--has-counter' : '' }}"
+      value="{{ value }}"
+      placeholder="{{ placeholder }}"
+      placeholder-style="{{ placeholderStyle }}"
+      placeholder-class="{{ placeholderClass }}"
+      disabled="{{ disabled }}"
+      maxlength="{{ maxlength }}"
+      focus="{{ focus }}"
+      auto-height="{{ autoHeight }}"
+      fixed="{{ fixed }}"
+      cursor-spacing="{{ cursorSpacing }}"
+      cursor="{{ cursor }}"
+      show-confirm-bar="{{ showConfirmBar }}"
+      selection-start="{{ selectionStart }}"
+      selection-end="{{ selectionEnd }}"
+      adjust-position="{{ adjustPosition }}"
+      bindfocus="_bindfocus"
+      bindblur="_bindblur"
+      bindlinechange="_bindlinechange"
+      bindinput="_bindinput"
+      bindconfirm="_bindconfirm"
+    />
+
+    <view
+      wx:if="{{ mode === 'textarea' && counter }}"
+      class="zui-field-counter"
+    >
+      {{ value.length }} / {{ maxlength }}
+    </view>
+  </view>
+</view>

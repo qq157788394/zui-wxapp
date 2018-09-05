@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "field 输入框",
+  "usingComponents": {
+    "z-field": "../../dist/z-field/index"
+  }
+}

@@ -1,0 +1,30 @@
+<view class="demo-page">
+  <z-field
+    label="收货地址:"
+    label-width="8em"
+    label-divider
+    divider
+    value="{{ value }}"
+    placeholder="{{ placeholder }}"
+    bind:input="handleinput"
+  ></z-field>
+
+  <z-field
+    size="small"
+    label="收货地址:"
+    label-width="7em"
+    divider
+    value="{{ value }}"
+    placeholder="{{ placeholder }}"
+    bind:input="handleinput"
+  ></z-field>
+
+  <z-field
+    mode="textarea"
+    divider
+    value="{{ value }}"
+    placeholder="{{ placeholder }}"
+    bind:input="handleinput"
+    counter
+  ></z-field>
+</view>
