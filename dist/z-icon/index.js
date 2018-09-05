@@ -8,12 +8,16 @@ Component({
   data: {},
   methods: {},
   behaviors: [],
-  created () {},
-  attached () {},
-  ready () {},
-  moved () {},
-  detached () {},
   relations: {},
   externalClasses: [],
-  options: {}
+  options: {},
+  lifetimes: {
+    created () {},
+    attached () {},
+    ready () {},
+    moved () {},
+    detached () {}
+  },
+  pageLifetimes: {},
+  definitionFilter () {}
 })

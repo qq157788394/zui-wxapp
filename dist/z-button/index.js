@@ -98,12 +98,16 @@ Component({
     }
   },
   behaviors: [],
-  created () {},
-  attached () {},
-  ready () {},
-  moved () {},
-  detached () {},
   relations: {},
   externalClasses: ['class-name'],
-  options: {}
+  options: {},
+  lifetimes: {
+    created () {},
+    attached () {},
+    ready () {},
+    moved () {},
+    detached () {}
+  },
+  pageLifetimes: {},
+  definitionFilter () {}
 })
