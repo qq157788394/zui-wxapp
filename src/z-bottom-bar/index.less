@@ -1,0 +1,37 @@
+@import "../../assets/_variable";
+
+@zui-bottom-bar-zindex: @zindex-navbar-fixed;
+@zui-bottom-bar-fill: @--fill-base;
+@zui-bottom-bar-height: 56px;
+@zui-bottom-bar-height-small: 48px;
+
+:host {
+  box-sizing: border-box;
+}
+
+.zui-bottom-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  box-sizing: inherit;
+  z-index: @zui-bottom-bar-zindex;
+  background-color: @zui-bottom-bar-fill;
+  height: @zui-bottom-bar-height;
+
+  &.zui-bottom-bar--small {
+    height: @zui-bottom-bar-height-small;
+  }
+}
+
+.zui-bottom-bar--divider {
+  &::before {
+    .setTopLine();
+  }
+}
+
+.zui-bottom-bar--shadow {
+  box-shadow: @--box-shadow-base;
+}

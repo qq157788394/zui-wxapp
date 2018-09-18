@@ -1,0 +1,63 @@
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+:host {
+  box-sizing: border-box;
+}
+.zui-bottom-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  box-sizing: inherit;
+  z-index: 1030;
+  background-color: #fff;
+  height: 56px;
+}
+.zui-bottom-bar.zui-bottom-bar--small {
+  height: 48px;
+}
+.zui-bottom-bar--divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d8dce5;
+  color: #d8dce5;
+  width: 200%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.zui-bottom-bar--shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}

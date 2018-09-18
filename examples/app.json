@@ -10,7 +10,8 @@
     "pages/popup/index",
     "pages/field/index",
     "pages/cell/index",
-    "pages/ellip/index"
+    "pages/ellip/index",
+    "pages/bottom-bar/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

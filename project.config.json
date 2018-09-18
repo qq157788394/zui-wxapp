@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -89,7 +89,13 @@
 				{
 					"id": -1,
 					"name": "ellip",
-					"pathName": "pages/ellip/index"
+					"pathName": "pages/ellip/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "bottom-bar",
+					"pathName": "pages/bottom-bar/index"
 				}
 			]
 		}

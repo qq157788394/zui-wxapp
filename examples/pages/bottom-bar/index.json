@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "bottom-bar 置底操作栏",
+  "usingComponents": {
+    "z-bottom-bar": "../../dist/z-bottom-bar/index",
+    "z-button": "../../dist/z-button/index"
+  }
+}
