@@ -11,7 +11,8 @@
     "pages/field/index",
     "pages/cell/index",
     "pages/ellip/index",
-    "pages/bottom-bar/index"
+    "pages/bottom-bar/index",
+    "pages/card/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

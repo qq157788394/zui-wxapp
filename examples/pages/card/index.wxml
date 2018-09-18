@@ -1,0 +1,5 @@
+<view class="demo-page">
+  <z-card box-shadow is-link margin-y="8px">
+    carrrrrd
+  </z-card>
+</view>

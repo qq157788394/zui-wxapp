@@ -1,0 +1,53 @@
+@import "../../assets/_variable";
+
+@zui-card-fill: @--fill-base;
+@zui-card-color: @--color-text-regular;
+@zui-card-border: @--border-width-base @--border-style-base @--border-color-extra-light;
+@zui-card-shadow: @--box-shadow-base;
+@zui-card-shadow-active: @--box-shadow-light;
+@zui-card-zindex: 1;
+
+:host {
+  box-sizing: border-box;
+}
+
+.zui-card {
+  position: relative;
+  display: block;
+  box-sizing: inherit;
+  background-color: @zui-card-fill;
+  color: @zui-card-color;
+
+  &.is-link {
+    &::before {
+      .setActive();
+    }
+  }
+
+  &.active {
+    &.is-link {
+      &::before {
+        opacity: .08;
+      }
+    }
+  }
+
+  &.zui-card--border {
+    border: @zui-card-border;
+  }
+
+  &.zui-card--shadow {
+    box-shadow: @zui-card-shadow;
+    z-index: @zui-card-zindex;
+
+    &.is-link {
+      &.active {
+        box-shadow: @zui-card-shadow-active;
+      }
+    }
+  }
+
+  &.zui-card--radius {
+    border-radius: 2px;
+  }
+}

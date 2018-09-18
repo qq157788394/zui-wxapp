@@ -1,0 +1,62 @@
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+:host {
+  box-sizing: border-box;
+}
+.zui-card {
+  position: relative;
+  display: block;
+  box-sizing: inherit;
+  background-color: #fff;
+  color: #5a5e66;
+}
+.zui-card.is-link::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #bdbdbd;
+  opacity: 0;
+}
+.zui-card.active.is-link::before {
+  opacity: .08;
+}
+.zui-card.zui-card--border {
+  border: 1px solid #edf2fc;
+}
+.zui-card.zui-card--shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  z-index: 1;
+}
+.zui-card.zui-card--shadow.is-link.active {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.zui-card.zui-card--radius {
+  border-radius: 2px;
+}

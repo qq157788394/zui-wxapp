@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -95,7 +95,13 @@
 				{
 					"id": -1,
 					"name": "bottom-bar",
-					"pathName": "pages/bottom-bar/index"
+					"pathName": "pages/bottom-bar/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "card",
+					"pathName": "pages/card/index"
 				}
 			]
 		}
