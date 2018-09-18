@@ -1,6 +1,6 @@
 {
   "name": "zui-wxapp",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "原生的微信小程序组件库",
   "main": "app.js",
   "directories": {
