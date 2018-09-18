@@ -1,0 +1,97 @@
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+:host {
+  box-sizing: border-box;
+}
+.zui-panel {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  box-sizing: inherit;
+  padding: 16px;
+}
+.zui-panel.divider-top::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #d8dce5;
+  color: #d8dce5;
+  width: 200%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.zui-panel.divider-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  width: 200%;
+  border-bottom: 1px solid #d8dce5;
+  color: #d8dce5;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.zui-panel-cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.zui-panel-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+}
+.zui-panel-cell__ft {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+          flex: none;
+  margin-left: 16px;
+}
+.zui-panel-title {
+  font-size: 16px;
+  color: #2d2f33;
+}
+.zui-panel-label {
+  font-size: 14px;
+  color: #878d99;
+}
+.zui-panel-desc {
+  font-size: 14px;
+  color: #878d99;
+}

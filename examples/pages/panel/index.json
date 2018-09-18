@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "panel 面板",
+  "usingComponents": {
+    "z-panel": "../../dist/z-panel/index"
+  }
+}

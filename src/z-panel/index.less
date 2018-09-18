@@ -1,0 +1,61 @@
+@import "../../assets/_variable";
+
+@zui-panel-fill: @--fill-base;
+@zui-panel-size-title: @--font-size-root;
+@zui-panel-color-title: @--color-text-primary;
+@zui-panel-size-label: @--font-size-base;
+@zui-panel-color-label: @--color-text-secondary;
+@zui-panel-size-desc: @--font-size-base;
+@zui-panel-color-desc: @--color-text-secondary;
+
+:host {
+  box-sizing: border-box;
+}
+
+.zui-panel {
+  position: relative;
+  display: block;
+  background-color: @zui-panel-fill;
+  box-sizing: inherit;
+  padding: 16px;
+
+  &.divider-top {
+    &::before {
+      .setTopLine();
+    }
+  }
+
+  &.divider-bottom {
+    &::after {
+      .setBottomLine();
+    }
+  }
+}
+
+.zui-panel-cell {
+  display: flex;
+}
+
+.zui-panel-cell__bd {
+  flex: auto;
+}
+
+.zui-panel-cell__ft {
+  flex: none;
+  margin-left: 16px;
+}
+
+.zui-panel-title {
+  font-size: @zui-panel-size-title;
+  color: @zui-panel-color-title;
+}
+
+.zui-panel-label {
+  font-size: @zui-panel-size-label;
+  color: @zui-panel-color-label;
+}
+
+.zui-panel-desc {
+  font-size: @zui-panel-size-desc;
+  color: @zui-panel-color-desc;
+}

@@ -1,4 +1,4 @@
-<view class="class-name zui-cell {{ size === 'medium' ? 'zui-cell--medium' : '' }} {{ divider ? 'divider' : '' }} {{ isLink ? 'is-link' : '' }}" hover-class="active">
+<view class="class-name zui-cell {{ 'zui-cell--' + size }} {{ divider ? 'divider' : '' }} {{ isLink ? 'is-link' : '' }}" hover-class="active">
   <view class="zui-cell__hd" wx:if="{{ hd }}">
     <view class="hd-class zui-cell-block">
       {{ hdText }}

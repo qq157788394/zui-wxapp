@@ -13,7 +13,8 @@
     "pages/ellip/index",
     "pages/bottom-bar/index",
     "pages/card/index",
-    "pages/image/index"
+    "pages/image/index",
+    "pages/panel/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

@@ -1,0 +1,3 @@
+<view class="demo-page">
+  <z-panel title="panel标题" label="panel标签" desc="panel描述"></z-panel>
+</view>

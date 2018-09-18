@@ -19,8 +19,6 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: @zui-cell-height-small;
-  font-size: @zui-cell-font-size-small;
   background-color: @zui-cell-fill;
   padding-right: 16px;
   padding-left: 16px;
@@ -41,8 +39,19 @@
     }
   }
 
+  &.zui-cell--small {
+    height: @zui-cell-height-small;
+    font-size: @zui-cell-font-size-small;
+  }
+
   &.zui-cell--medium {
     height: @zui-cell-height;
+    font-size: @zui-cell-font-size;
+  }
+
+  &.zui-cell--auto {
+    padding: 16px;
+    height: auto;
     font-size: @zui-cell-font-size;
   }
 
