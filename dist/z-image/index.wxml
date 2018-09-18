@@ -1,0 +1,9 @@
+<image
+  class="class-name zui-image {{ border ? 'zui-image--border' + '' : '' }} {{ error ? 'iconfont zui-image-icon icon-imagebrokenvariant' : '' }}"
+  style="{{ elementStyle }} {{ 'width: ' + (width || size) + ';' }} {{ 'height: ' + (height || size) + ';' }} {{ borderRadius ? 'border-radius: ' + borderRadius + ';' : '' }}"
+  mode="{{ mode }}"
+  src="{{ src }}"
+  lazy-load="{{ lazyLoad }}"
+  binderror="_binderror"
+  bindload="_bindload"
+/>

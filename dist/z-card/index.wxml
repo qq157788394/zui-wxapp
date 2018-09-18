@@ -1,0 +1,7 @@
+<view
+  class="class-name zui-card {{ isLink ? 'is-link' : '' }} {{ border ? 'zui-card--border' : '' }} {{ boxShadow ? 'zui-card--shadow' : '' }} {{ marginY ? 'zui-card--radius' : '' }}"
+  style="{{ marginY ? 'margin-right: ' + marginY + ';' + 'margin-left: ' + marginY + ';' : '' }} {{ elementStyle }}"
+  hover-class="active"
+>
+  <slot></slot>
+</view>
