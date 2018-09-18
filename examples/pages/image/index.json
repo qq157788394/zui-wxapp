@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "image 图片",
+  "usingComponents": {
+    "z-image": "../../dist/z-image/index"
+  }
+}

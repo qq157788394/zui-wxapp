@@ -1,0 +1,3 @@
+<view class="demo-page">
+  <z-image src="http://ww3.sinaimg.cn/mw600/006XNEY7gy1fvcxj69864j30hs0qhjvf.jpg" size="100vw" inline></z-image>
+</view>
