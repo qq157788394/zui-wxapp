@@ -1,3 +1,22 @@
+/**
+ * z-field 输入框
+ * @desc 输入框
+ *
+ * @prop { String } mode - 类型，可选值input、textarea，默认input
+ * @prop { String } label - label的文字
+ * @prop { String } labelWidth - label的自定义宽度，默认6em
+ * @prop { Boolean } labelDivider - label右面的边框
+ * @prop { Boolean } divider - 是否有底部边框
+ * @prop { String } size - 尺寸，默认是medium，可选值small，small的文字大小是14px，medium是16px
+ * @prop { String } value - 值内容
+ * @prop { Boolean } counter - 字数统计，仅textarea下可用
+ * @prop { String } className
+ * @prop { String } labelClass
+ * @prop { String } inputClass
+ * @prop { String } textareaClass
+ * @prop { String } placeholderClass
+ * @prop { other } other - 其余字段，跟微信小程序的一样
+ */
 Component({
   properties: {
     mode: {

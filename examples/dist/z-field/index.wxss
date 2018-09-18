@@ -130,13 +130,13 @@
   height: 56px;
   box-sizing: inherit;
 }
-.zui-field--textarea {
+.zui-field.zui-field--textarea {
   height: auto;
   line-height: 1.5;
   box-sizing: inherit;
 }
-.zui-field--textarea .zui-field__hd,
-.zui-field--textarea .zui-field__bd {
+.zui-field.zui-field--textarea .zui-field__hd,
+.zui-field.zui-field--textarea .zui-field__bd {
   padding-top: 16px;
   padding-bottom: 16px;
   -webkit-box-align: stretch;
