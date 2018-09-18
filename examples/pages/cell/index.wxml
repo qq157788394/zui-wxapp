@@ -1,0 +1,15 @@
+<view class="demo-page">
+  <z-cell hd bd ft is-link chevron-right divider>
+    <view slot="hd">hd</view>
+    <view slot="bd">
+      <z-ellip line="1" text="很长很长很长很长很长很长很长很长很长很长很长很长很长很长"></z-ellip>
+    </view>
+    <view slot="ft">ft</view>
+  </z-cell>
+
+  <z-cell hd bd chevron-right divider bd-text="内容内容内容">
+    <view slot="hd">hd</view>
+    <!-- <view slot="bd"></view> -->
+
+  </z-cell>
+</view>

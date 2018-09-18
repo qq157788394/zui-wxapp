@@ -1,0 +1,21 @@
+<view class="class-name zui-cell {{ size === 'medium' ? 'zui-cell--medium' : '' }} {{ divider ? 'divider' : '' }} {{ isLink ? 'is-link' : '' }}" hover-class="active">
+  <view class="zui-cell__hd" wx:if="{{ hd }}">
+    <view class="hd-class zui-cell-block">
+      {{ hdText }}
+      <slot name="hd"></slot>
+    </view>
+  </view>
+  <view class="zui-cell__bd" wx:if="{{ bd }}">
+    <view class="bd-class zui-cell-block">
+      {{ bdText }}
+      <slot name="bd"></slot>
+    </view>
+  </view>
+  <view class="zui-cell__ft" wx:if="{{ ft }}">
+    <view class="ft-class zui-cell-block">
+      {{ ftText }}
+      <slot name="ft"></slot>
+    </view>
+    <view class="iconfont zui-cell-icon icon-chevron-right" wx:if="{{ chevronRight }}"></view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "cell 单元格",
+  "usingComponents": {
+    "z-cell": "../../dist/z-cell/index",
+    "z-ellip": "../../dist/z-ellip/index"
+  }
+}

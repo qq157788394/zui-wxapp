@@ -8,7 +8,9 @@
     "pages/badge/index",
     "pages/stepper/index",
     "pages/popup/index",
-    "pages/field/index"
+    "pages/field/index",
+    "pages/cell/index",
+    "pages/ellip/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",

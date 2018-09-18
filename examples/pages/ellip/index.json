@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "ellip 文字截断",
+  "usingComponents": {
+    "z-ellip": "../../dist/z-ellip/index"
+  }
+}
