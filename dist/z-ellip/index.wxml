@@ -1,0 +1,6 @@
+<view class="class-name zui-ellip-{{ line }}">
+  <block wx:if="{{ text }}">
+    {{ text }}
+  </block>
+  <slot></slot>
+</view>

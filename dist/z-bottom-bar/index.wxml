@@ -1,0 +1,3 @@
+<view class="zui-bottom-bar {{ size === 'small' ? 'zui-bottom-bar--small' : '' }} {{ divider ? 'zui-bottom-bar--divider' : '' }} {{ boxShadow ? 'zui-bottom-bar--shadow' : '' }}">
+  <slot></slot>
+</view>

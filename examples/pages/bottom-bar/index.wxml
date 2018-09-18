@@ -1,5 +1,5 @@
 <view class="demo-page">
   <z-bottom-bar box-shadow>
-    <z-button size="x-large" type="success">微信支付</z-button>
+    <z-button size="x-large" type="success" border-radius="none" box-shadow="none">下一步</z-button>
   </z-bottom-bar>
 </view>
