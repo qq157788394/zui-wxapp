@@ -12,6 +12,10 @@ Page({
       {
         value: 'value3',
         label: 'label3'
+      },
+      {
+        value: 'value4',
+        label: 'label4'
       }
     ],
     selected: 'value1'
