@@ -1,0 +1,19 @@
+<radio-group class="zui-radio-group {{ 'zui-radio-group--' + mode }}" bindchange="_bindchange">
+  <label class="zui-radio-label" wx:for="{{ list }}" wx:for-item="item" wx:key="{{ item.value }}">
+    <view class="zui-radio-cell {{ 'zui-radio-cell--' + type }} {{ item.value === selected ? 'checked' : '' }} {{ item.disabled || disabled ? 'disabled' : '' }}" hover-class="{{ mode === 'flex' && !(disabled || item.disabled) ? 'active' : '' }}">
+      <radio value="{{ item.value }}" checked="{{ item.value === selected }}" disabled="{{ item.disabled || disabled }}" />
+      <view
+        class="iconfont zui-radio-icon {{ item.value !== selected ? 'icon-checkboxblankcircleoutline' : 'icon-checkboxmarkedcircle' }}"
+        style="{{ color && (item.value === selected) && !(item.disabled || disabled) ? 'color: ' + color + ';' : '' }}"
+        wx:if="{{ mode === 'inline' }}"
+      ></view>
+      <view class="zui-radio-name">{{ item.label }}</view>
+      <view
+        class="iconfont zui-radio-icon icon-check"
+        style="{{ color && (item.value === selected) && !(item.disabled || disabled) ? 'color: ' + color + ';' : '' }}"
+        wx:if="{{ mode === 'flex' }}"
+        hidden="{{ item.value !== selected }}"
+      ></view>
+    </view>
+  </label>
+</radio-group>

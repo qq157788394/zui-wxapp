@@ -1,0 +1,149 @@
+@import "../../assets/_variable";
+
+@import "../../assets/_zui-icon";
+
+@zui-radio-color: @--border-color-base;
+@zui-radio-color-primary: @--color-primary;
+@zui-radio-color-success: @--color-success;
+@zui-radio-color-warning: @--color-warning;
+@zui-radio-color-danger: @--color-danger;
+@zui-radio-color-info: @--color-info;
+@zui-radio-color-disabled: @--border-color-base;
+
+@zui-radio-name-color: @--color-text-regular;
+
+@zui-radio-fill: @--fill-base;
+
+:host {
+  box-sizing: border-box;
+}
+
+.zui-radio-group {
+  box-sizing: inherit;
+
+  &.zui-radio-group--inline {
+    display: inline-flex;
+
+    .zui-radio-cell {
+      display: inline-flex;
+
+      .zui-radio-name {
+        margin-left: 8px;
+      }
+    }
+
+    .zui-radio-label {
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &.zui-radio-group--flex {
+    position: relative;
+
+    &::before {
+      .setTopLine();
+    }
+
+    &::after {
+      .setBottomLine();
+    }
+
+    .zui-radio-cell {
+      position: relative;
+      display: flex;
+      height: 48px;
+      padding-right: 16px;
+      padding-left: 16px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: @zui-radio-fill;
+
+      &::before {
+        .setActive();
+        opacity: 0;
+      }
+
+      &:not(.checked) {
+        &.active {
+          &::before {
+            opacity: .08;
+          }
+        }
+      }
+    }
+
+    .zui-radio-label {
+      &:not(:last-child) {
+        .zui-radio-cell {
+          &::after {
+            .setBottomLine();
+            left: 16px;
+            right: 16px;
+            width: calc(~"200% - 64px");
+          }
+        }
+      }
+    }
+  }
+}
+
+.zui-radio-cell {
+  color: @zui-radio-color;
+
+  &.checked {
+    &.zui-radio-cell--primary {
+      color: @zui-radio-color-primary;
+    }
+
+    &.zui-radio-cell--success {
+      color: @zui-radio-color-success;
+    }
+
+    &.zui-radio-cell--warning {
+      color: @zui-radio-color-warning;
+    }
+
+    &.zui-radio-cell--danger {
+      color: @zui-radio-color-danger;
+    }
+
+    &.zui-radio-cell--info {
+      color: @zui-radio-color-info;
+    }
+  }
+
+  &.disabled {
+    color: @zui-radio-color-disabled !important;
+
+    .zui-radio-name {
+      color: @zui-radio-color-disabled;
+    }
+  }
+}
+
+.zui-radio-name {
+  color: @zui-radio-name-color;
+}
+
+.zui-radio-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 1;
+  width: 1em;
+  box-sizing: border-box;
+}
+
+radio {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  display: none;
+}

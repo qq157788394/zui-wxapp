@@ -7,7 +7,7 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"miniprogramRoot": "./examples/",
+	"miniprogramRoot": "examples/",
 	"compileType": "miniprogram",
 	"appid": "wx0ffbc046375c3bc6",
 	"projectname": "zui-wxapp",
@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 13,
+			"current": 14,
 			"list": [
 				{
 					"id": -1,
@@ -113,7 +113,14 @@
 				{
 					"id": -1,
 					"name": "panel",
-					"pathName": "pages/panel/index"
+					"pathName": "pages/panel/index",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "radio-group",
+					"pathName": "pages/radio-group/index",
+					"query": ""
 				}
 			]
 		}

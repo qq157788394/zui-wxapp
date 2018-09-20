@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "radio-group 单选组",
+  "usingComponents": {
+    "z-radio-group": "../../dist/z-radio-group/index"
+  }
+}

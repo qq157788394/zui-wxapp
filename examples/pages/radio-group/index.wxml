@@ -1,0 +1,3 @@
+<view class="demo-page">
+  <z-radio-group type="primary" mode="inline" list="{{ list }}" selected="{{ selected }}" bind:change="bindchange"></z-radio-group>
+</view>

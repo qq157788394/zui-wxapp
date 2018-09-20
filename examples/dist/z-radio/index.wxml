@@ -1,0 +1,4 @@
+<label class="zui-radio {{ 'zui-radio--' + mode }}">
+  <radio value="{{ value }}" checked="{{ checked }}" disabled="{{ disabled }}" />
+  {{ label }}
+</label>

@@ -14,7 +14,8 @@
     "pages/bottom-bar/index",
     "pages/card/index",
     "pages/image/index",
-    "pages/panel/index"
+    "pages/panel/index",
+    "pages/radio-group/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
