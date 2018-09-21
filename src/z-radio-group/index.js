@@ -8,6 +8,9 @@
  * @prop { String } fontSize - 自定义lable的字号
  * @prop { String } type - 颜色类型，可选值primary/success/warning/danger/info，默认primary
  * @prop { Boolean } inline - 是否行内
+ * @prop { String } className - radio-group的自定义class
+ * @prop { String } labelClass - label的自定义class
+ * @prop { String } cellClass - 每一个选项的自定义class
  */
 Component({
   properties: {
