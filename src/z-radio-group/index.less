@@ -9,9 +9,7 @@
 @zui-radio-color-danger: @--color-danger;
 @zui-radio-color-info: @--color-info;
 @zui-radio-color-disabled: @--border-color-base;
-
 @zui-radio-name-color: @--color-text-regular;
-
 @zui-radio-fill: @--fill-base;
 
 :host {
@@ -42,6 +40,7 @@
 
   &.zui-radio-group--flex {
     position: relative;
+    background-color: @zui-radio-fill;
 
     &::before {
       .setTopLine();
@@ -59,7 +58,6 @@
       padding-left: 16px;
       align-items: center;
       justify-content: space-between;
-      background-color: @zui-radio-fill;
 
       &::before {
         .setActive();

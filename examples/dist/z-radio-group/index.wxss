@@ -116,6 +116,7 @@
 }
 .zui-radio-group.zui-radio-group--flex {
   position: relative;
+  background-color: #fff;
 }
 .zui-radio-group.zui-radio-group--flex::before {
   content: "";
@@ -165,7 +166,6 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  background-color: #fff;
 }
 .zui-radio-group.zui-radio-group--flex .zui-radio-cell::before {
   pointer-events: none;
