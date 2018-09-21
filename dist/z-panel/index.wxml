@@ -1,0 +1,19 @@
+<view
+  class="class-name zui-panel {{ divider ? 'divider-' + divider : '' }}"
+  style="{{ elementStyle }}"
+>
+  <view class="zui-panel-cell">
+    <view class="title-class zui-panel-cell__bd zui-panel-title" style="{{ titleStyle }}">
+      {{ title }}
+      <slot name="title"></slot>
+    </view>
+    <view class="label-class zui-panel-cell__ft zui-panel-label" style="{{ labelStyle }}">
+      {{ label }}
+      <slot name="label"></slot>
+    </view>
+  </view>
+  <view class="desc-class zui-panel-cell zui-panel-desc" style="{{ descStyle }}">
+    {{ desc }}
+    <slot name="desc"></slot>
+  </view>
+</view>
