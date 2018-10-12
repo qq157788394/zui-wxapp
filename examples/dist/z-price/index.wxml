@@ -1,0 +1,5 @@
+<view class="zui-price">
+  <view class="zui-label" style="{{ 'font-size: ' + ((fontSize >= 20) ? 11 : 10) + 'px;' }}">￥</view>
+  <view style="{{ 'font-size: ' + fontSize + 'px;' }}">{{ unit === 'fen' ? price / 100 : price }}</view>
+  <view class="zui-label" wx:if="{{ rise }}" style="margin-left: 4px; {{ 'font-size: ' + ((fontSize >= 20) ? 11 : 10) + 'px;' }}"> 起</view>
+</view>

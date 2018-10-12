@@ -1,5 +1,7 @@
 Page({
-  data: {},
+  data: {
+    number: 0
+  },
   onLoad () {},
   onReady () {},
   onShow () {},
@@ -9,5 +11,11 @@ Page({
   onReachBottom () {},
   onShareAppMessage () {},
   onPageScroll () {},
-  onTabItemTap () {}
+  onTabItemTap () {},
+  _handleNumber (e) {
+    const val = e.detail
+    this.setData({
+      number: val
+    })
+  }
 })

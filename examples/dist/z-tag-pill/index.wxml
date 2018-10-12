@@ -1,0 +1,4 @@
+<view class="zui-tag-pill">
+  <view class="zui-tag-pill__title" style="{{ !desc ? 'padding-right: 6px;' : ''  }}">9折</view>
+  <view class="zui-tag-pillz__desc">每单限1份优惠</view>
+</view>

@@ -1,3 +1,13 @@
 <view class="demo-page">
-  panel-good
+  <z-panel-good
+    image="http://ws2.sinaimg.cn/mw600/852a13f1gy1fvi2j44dbyj20nm0zkn09.jpg"
+    title="商品标题"
+    desc="商品描述文案"
+    capsule-title="促销"
+    capsule-desc="促销描述文案"
+    price="{{ 1600 }}"
+    priceRise
+  >
+    <z-stepper bind:change="_handleNumber" value="{{ number }}" min="{{ 0 }}" transition></z-stepper>
+  </z-panel-good>
 </view>

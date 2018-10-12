@@ -174,8 +174,6 @@
   height: 24px;
   vertical-align: middle;
   box-sizing: inherit;
-  margin-right: 4px;
-  margin-left: 4px;
   color: #000;
 }
 .zui-stepper.zui-stepper--disabled .zui-stepper__number,

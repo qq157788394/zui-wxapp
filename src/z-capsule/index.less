@@ -1,0 +1,108 @@
+@import "../../assets/_variable";
+
+@zui-capsule-color-primary: @--color-primary;
+@zui-capsule-color-success: @--color-success;
+@zui-capsule-color-warning: @--color-warning;
+@zui-capsule-color-danger: @--color-danger;
+@zui-capsule-color-info: @--color-info;
+
+:host {
+  display: inline-flex;
+  box-sizing: border-box;
+  flex: none;
+}
+
+.zui-capsule {
+  position: relative;
+  display: inline-flex;
+  font-size: 10px;
+  box-sizing: inherit;
+  overflow: hidden;
+  border-radius: 16px;
+
+  &::before {
+    .setBorderLine(@zui-capsule-color-info);
+    border-radius: 16px;
+  }
+}
+
+.zui-capsule__title {
+  background-color: @zui-capsule-color-info;
+  color: @--color-white;
+  padding: 2px 4px 2px 8px;
+}
+
+.zui-capsule__desc {
+  color: @zui-capsule-color-info;
+  padding: 2px 8px 2px 4px;
+}
+
+.zui-capsule--primary {
+  &::before {
+    border-color: @zui-capsule-color-primary;
+  }
+
+  .zui-capsule__title {
+    background-color: @zui-capsule-color-primary;
+  }
+
+  .zui-capsule__desc {
+    color: @zui-capsule-color-primary;
+  }
+}
+
+.zui-capsule--success {
+  &::before {
+    border-color: @zui-capsule-color-success;
+  }
+
+  .zui-capsule__title {
+    background-color: @zui-capsule-color-success;
+  }
+
+  .zui-capsule__desc {
+    color: @zui-capsule-color-success;
+  }
+}
+
+.zui-capsule--warning {
+  &::before {
+    border-color: @zui-capsule-color-warning;
+  }
+
+  .zui-capsule__title {
+    background-color: @zui-capsule-color-warning;
+  }
+
+  .zui-capsule__desc {
+    color: @zui-capsule-color-warning;
+  }
+}
+
+.zui-capsule--danger {
+  &::before {
+    border-color: @zui-capsule-color-danger;
+  }
+
+  .zui-capsule__title {
+    background-color: @zui-capsule-color-danger;
+  }
+
+  .zui-capsule__desc {
+    color: @zui-capsule-color-danger;
+  }
+}
+
+.zui-capsule--info {
+  &::before {
+    border-color: @zui-capsule-color-info;
+  }
+
+  .zui-capsule__title {
+    background-color: @zui-capsule-color-info;
+  }
+
+  .zui-capsule__desc {
+    color: @zui-capsule-color-info;
+  }
+}

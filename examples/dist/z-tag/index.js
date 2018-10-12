@@ -7,6 +7,8 @@
  * @prop { Boolean } hit - 是否有边框描边
  * @prop { Boolean } cricle - 是否圆角
  * @prop { Boolean } mark - 是否标记用，左下角直角
+ * @prop { String } elementStyle - 自定义style
+ * @prop { String } className - 自定义class
  */
 
 Component({

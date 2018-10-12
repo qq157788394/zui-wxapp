@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "panel-good 商品面板",
   "usingComponents": {
-    "z-panel-good": "../../dist/z-panel-good/index"
+    "z-panel-good": "../../dist/z-panel-good/index",
+    "z-stepper": "../../dist/z-stepper/index"
   }
 }

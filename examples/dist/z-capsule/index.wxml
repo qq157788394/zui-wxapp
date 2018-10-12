@@ -1,0 +1,4 @@
+<view class="zui-capsule {{ 'zui-capsule--' + type }}">
+  <view wx:if="{{ title }}" class="zui-capsule__title" style="{{ !desc ? 'padding-right: 8px;' : ''  }}">{{ title }}</view>
+  <view wx:if="{{ desc }}" class="zui-capsule__desc">{{ desc }}</view>
+</view>

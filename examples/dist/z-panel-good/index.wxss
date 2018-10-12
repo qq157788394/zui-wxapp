@@ -23,3 +23,68 @@
 -------------------------- */
 /* Font
 -------------------------- */
+:host {
+  box-sizing: border-box;
+}
+.zui-panel-good {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: inherit;
+  background-color: #fff;
+  padding: 8px 16px 8px 8px;
+}
+.zui-panel-good__hd {
+  margin-right: 8px;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+          flex: none;
+  box-sizing: inherit;
+}
+.zui-panel-good__bd {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  box-sizing: inherit;
+  padding-bottom: 24px;
+  overflow: hidden;
+}
+.zui-panel-good-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #2d2f33;
+  box-sizing: inherit;
+  text-align: justify;
+}
+.zui-panel-good-desc {
+  font-size: 12px;
+  color: #878d99;
+  line-height: 1.8;
+  box-sizing: inherit;
+  text-align: justify;
+}
+.zui-panel-good-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  box-sizing: inherit;
+  line-height: 24px;
+}
+.zui-panel-good-capsule-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 4px;
+}

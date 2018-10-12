@@ -1,6 +1,11 @@
 {
   "component": true,
   "usingComponents": {
-    "component-tag-name": "../z-ellip/index"
+    "z-image": "../z-image/index",
+    "z-price": "../z-price/index",
+    "z-button": "../z-button/index",
+    "z-tag": "../z-tag/index",
+    "z-capsule": "../z-capsule/index",
+    "z-ellip": "../z-ellip/index"
   }
 }

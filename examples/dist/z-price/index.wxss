@@ -1,0 +1,52 @@
+/* Transition
+-------------------------- */
+/* Colors
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Background
+-------------------------- */
+/* Border
+-------------------------- */
+/* Box-shadow
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Font
+-------------------------- */
+:host {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+          flex: none;
+}
+.zui-price {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+          flex: none;
+  line-height: 1;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  font-weight: 700;
+  font-family: Tahoma;
+  color: #fa5555;
+}
+.zui-label {
+  line-height: 1.2;
+}

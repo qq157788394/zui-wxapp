@@ -1,1 +1,60 @@
 @import "../../assets/_variable";
+
+:host {
+  box-sizing: border-box;
+}
+
+.zui-panel-good {
+  display: flex;
+  box-sizing: inherit;
+  background-color: @--fill-base;
+  padding: 8px 16px 8px 8px;
+}
+
+.zui-panel-good__hd {
+  margin-right: 8px;
+  flex: none;
+  box-sizing: inherit;
+}
+
+.zui-panel-good__bd {
+  position: relative;
+  display: block;
+  flex: auto;
+  box-sizing: inherit;
+  padding-bottom: 24px;
+  overflow: hidden;
+}
+
+.zui-panel-good-title {
+  font-weight: @--font-weight-blod;
+  font-size: 15px;
+  color: @--color-text-primary;
+  box-sizing: inherit;
+  text-align: justify;
+}
+
+.zui-panel-good-desc {
+  font-size: 12px;
+  color: @--color-text-secondary;
+  line-height: 1.8;
+  box-sizing: inherit;
+  text-align: justify;
+}
+
+.zui-panel-good-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: inherit;
+  line-height: 24px;
+}
+
+.zui-panel-good-capsule-row {
+  display: flex;
+  margin-top: 4px;
+}
