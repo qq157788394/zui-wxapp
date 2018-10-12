@@ -1,0 +1,1 @@
+:host{box-sizing:border-box}.zui-price,:host{display:-webkit-inline-box;display:-webkit-inline-flex;display:inline-flex;-webkit-box-flex:0;-webkit-flex:none;flex:none}.zui-price{line-height:1;-webkit-box-align:end;-webkit-align-items:flex-end;align-items:flex-end;font-weight:700;font-family:Tahoma;color:#fa5555}.zui-label{line-height:1.2}

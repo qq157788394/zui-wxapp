@@ -15,6 +15,12 @@
 Component({
   properties: {
     value: Number,
+    // value: {
+    //   type: Number,
+    //   observer: function (newVal, oldVal, changedPath) {
+    //     console.log('z-stepper: value', newVal, oldVal, changedPath)
+    //   }
+    // },
     max: {
       type: Number,
       value: Infinity

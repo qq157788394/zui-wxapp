@@ -1,3 +1,6 @@
-<view class="class-name zui-tag {{ 'zui-tag--' + size }} {{ 'zui-tag--' + color }} {{ hit ? 'zui-tag--hit' : '' }} {{ cricle ? 'zui-tag--cricle' : '' }} {{ mark ? 'zui-tag--mark' : '' }}">
+<view
+  class="class-name zui-tag {{ 'zui-tag--' + size }} {{ 'zui-tag--' + color }} {{ hit ? 'zui-tag--hit' : '' }} {{ cricle ? 'zui-tag--cricle' : '' }} {{ mark ? 'zui-tag--mark' : '' }}"
+  style="{{ elementStyle }}"
+>
   <slot></slot>
 </view>

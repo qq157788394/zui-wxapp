@@ -1,0 +1,25 @@
+<view class="zui-panel-good">
+  <view class="zui-panel-good__hd">
+    <z-image src="{{ image }}" size="25vw" border-radius="2px"></z-image>
+  </view>
+
+  <view class="zui-panel-good__bd">
+    <view class="zui-panel-good-title">{{ title }}</view>
+    <view class="zui-panel-good-desc">{{ desc }}</view>
+    <!-- <z-ellip line="{{ 1 }}" text="商品名称商品名称商品名称商品名称商品名称" class-name="zui-panel-good-title"></z-ellip> -->
+    <!-- <z-ellip line="{{ 1 }}" text="商品描述商品描述商品描述商品描述商品描述商品描述" class-name="zui-panel-good-desc"></z-ellip> -->
+
+    <!-- <view class="zui-panel-good-desc">
+      <label style="margin-right: 12px;">月售121</label>
+      <label>好评率97%</label>
+    </view> -->
+    <view class="zui-panel-good-capsule-row">
+      <z-capsule title="{{ capsuleTitle }}" desc="{{ capsuleDesc }}" type="{{ capsuleType }}"></z-capsule>
+    </view>
+    <view class="zui-panel-good-footer">
+      <z-price price="{{ price }}" rise="{{ priceRise }}"></z-price>
+      <slot></slot>
+      <!-- <z-stepper bind:change="_bindchange" value="{{ value }}" transition type="{{ stepperType }}" max="{{ stepperMax }}" min="{{ 0 }}" step="{{ stepperStep }}"></z-stepper> -->
+    </view>
+  </view>
+</view>
